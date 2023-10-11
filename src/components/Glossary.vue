@@ -1,29 +1,48 @@
 <template>
-  <v-expansion-panels class="glossary">
-    <v-expansion-panel title="Glossary" 
-      bg-color="rgba(256,256,256,0.01)"
-    >
-      <v-expansion-panel-text >
-        <v-virtual-scroll :items="glossary"
-          :height="400"
-        >
-          <template v-slot:default="{ item }">
-            <div class="glossary-title"> 
+  <v-row class="mt-5" >
+    <v-card max-width="18em" style="border-right: 1pt solid grey">
+      <v-card-text>
+        <div class="text-h5">
+          Glossary
+        </div>
+        <v-list density="compact">
+          <v-list-item v-for="item in glossary"
+            @click="itemIndex = item.value">
+            <v-list-item-title>
+              <v-icon :icon="itemIcon(item)" />
               {{item.title}}
-              <a v-if="item.link" :href="item.link" target="_blank">
-                <v-icon>mdi-open-in-new</v-icon>
-              </a>
-            </div>
-            <div class="glossary-summary"> {{item.summary}}</div>
-            <div class="glossary-text"> {{item.text}}</div>
-          </template>
-        </v-virtual-scroll> 
-      </v-expansion-panel-text >
-    </v-expansion-panel>
-  </v-expansion-panels>
+            </v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-card-text>
+    </v-card>
+    <v-card max-width="30em">
+      <v-card-text>
+        <div class="glossary-title"> 
+          {{item().title}}
+          <a v-if="item().link" :href="item().link" target="_blank">
+            <v-icon>mdi-open-in-new</v-icon>
+          </a>
+        </div>
+        <div class="glossary-summary"> {{item().summary}}</div>
+        <div class="glossary-text"> {{item().text}}</div>
+      </v-card-text>
+    </v-card>
+  </v-row>
 </template>
 
 <script setup>
+  import { ref } from "vue";
+  var itemIndex = ref(0);
+  function item() {
+    return glossary[itemIndex.value];
+  }
+  function itemIcon(item) {
+    return itemIndex.value === item.value
+      ? "mdi-arrow-right-circle"
+      : "mdi-circle-small";
+  }
+
   const glossary = [{
     title: "admin.sc-voice.net",
     summary: "Voice administration website",

@@ -85,6 +85,18 @@
     `,
     link: "https://ebt-site.sc-voice.net",
   },{
+    title: "sc-voice.net",
+    summary: "Voice website",
+    link: "https://sc-voice.net",
+    text: `
+      (also www.sc-voice.net)
+      The new website for SuttaCentral Voice displays
+      multiple sub-windows called "cards" that display search results,
+      suttas, and wiki pages.
+      Sutta cards provide random access to segments 
+      for a "click to hear" experience.
+    `,
+  },{
     title: "voice.suttacentral.net",
     summary: "Legacy Voice website",
     link: "https://voice.suttacentral.net",

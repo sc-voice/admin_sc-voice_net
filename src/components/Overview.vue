@@ -2,7 +2,8 @@
   <v-container class="fill-height">
     <v-responsive class="align-start text-start fill-height">
       <div class="text-h4"> Overview </div>
-      <img src="img/api.sc-voice.net.drawio.svg" class="diagram" />
+      <img src="https://raw.githubusercontent.com/sc-voice/admin.sc-voice.net/main/public/img/api.sc-voice.net.drawio.svg"
+        class="diagram" />
       <Glossary />
     </v-responsive>
   </v-container>

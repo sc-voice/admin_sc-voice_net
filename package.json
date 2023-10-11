@@ -8,6 +8,7 @@
     "build:dist": "scripts/build-dist.sh",
     "git:commit": "scripts/git-commit.sh",
     "preview": "vite preview",
+    "gh-pages": "scripts/gh-page.sh",
     "push-action": "scripts/push-action",
     "schedule-action": "scripts/schedule-action",
     "lint": "eslint . --fix --ignore-path .gitignore"

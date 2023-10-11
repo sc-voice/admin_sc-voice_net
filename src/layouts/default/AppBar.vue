@@ -1,13 +1,16 @@
 <template>
   <v-app-bar flat>
     <v-app-bar-title>
-      <v-icon icon="mdi-circle-slice-6" />
-
-      Essentials Preset
+      admin.sc-voice.net
+      <div class="text-caption">
+        SuttaCentral Voice Administration
+      </div>
     </v-app-bar-title>
+    <v-spacer />
+    <div class="mr-5">v{{PACKAGE.version}}</div>
   </v-app-bar>
 </template>
 
 <script setup>
-  //
+  import { default as PACKAGE } from "../../../package.json";
 </script>

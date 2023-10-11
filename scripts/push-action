@@ -11,8 +11,7 @@ git pull
 echo -e "${SCRIPT}: updating dependencies..."
 npm install 
 
-npm run build:dist
-npm run git:commit -npm
 npm run gh-pages
+npm run git:commit 
 
 echo -e "${SCRIPT}: END `date`"

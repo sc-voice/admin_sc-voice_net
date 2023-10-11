@@ -2,8 +2,11 @@
   <v-container class="fill-height">
     <v-responsive class="align-start text-start fill-height">
       <div class="text-h4"> Overview </div>
-      <img src="https://raw.githubusercontent.com/sc-voice/admin.sc-voice.net/main/public/img/api.sc-voice.net.drawio.svg"
-        class="diagram" />
+      <div @click="clickDiagram">
+        <img src="https://raw.githubusercontent.com/sc-voice/admin.sc-voice.net/main/public/img/api.sc-voice.net.drawio.svg"
+          :height="diagramHeight()"
+          class="diagram" />
+      </div>
       <Glossary />
     </v-responsive>
   </v-container>
@@ -11,6 +14,18 @@
 
 <script setup>
   import Glossary from "./Glossary.vue";
+  import { ref } from "vue";
+
+  var thumbnail = ref(true);
+
+  function clickDiagram() {
+    console.log("clickDiagram");
+    thumbnail.value = !thumbnail.value;
+  }
+
+  function diagramHeight() {
+    return thumbnail.value ? 150 : 450;
+  }
 </script>
 
 <style scoped>

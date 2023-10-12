@@ -22,7 +22,7 @@
     "merkle-json": "^2.6.0",
     "pinia": "^2.0.0",
     "roboto-fontface": "*",
-    "scv-esm": "^1.81.30",
+    "scv-esm": "^1.81.31",
     "vue": "^3.2.0",
     "vue-router": "^4.0.0",
     "vuetify": "^3.0.0"

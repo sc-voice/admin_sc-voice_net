@@ -7,8 +7,8 @@ const SERVERS = [{
   title: 'Default language server; SuttaCentral gateway',
 },{
   name:'de.api.sc-voice.net',
-  url: 'https://en.api.sc-voice.net',
-  title: 'English server (EN)',
+  url: 'https://de.api.sc-voice.net',
+  title: 'German server (DE)',
 },{
   name:'en.api.sc-voice.net',
   url: 'https://en.api.sc-voice.net',

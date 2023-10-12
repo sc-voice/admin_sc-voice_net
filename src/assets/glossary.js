@@ -66,6 +66,16 @@ const Glossary = [{
     English (EN) Voice API server
   `,
 },{
+  title: "s1.sc-voice.net",
+  summary: "prototype Voice API server",
+  link: "https://s1.sc-voice.net",
+  github: "sc-voice/scv-server",
+  text: `
+    (deprecated)
+    Prototype for api.sc-voice.net will be shut down
+    after www.sc-voice.net is fully in production.
+  `,
+},{
   title: "sc-voice.net",
   summary: "SuttaCentral Voice website",
   link: "https://sc-voice.net",

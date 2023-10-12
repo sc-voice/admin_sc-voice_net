@@ -7,13 +7,14 @@
           :height="diagramHeight()"
           class="diagram" />
       </div>
-      <Glossary />
+      <Glossary :items="glossary" title="Glossary" />
     </v-responsive>
   </v-container>
 </template>
 
 <script setup>
   import Glossary from "./Glossary.vue";
+  import { default as glossary } from "../assets/glossary.js"
   import { ref } from "vue";
 
   var thumbnail = ref(true);

@@ -1,6 +1,5 @@
 <template>
   <v-row class="mt-5" >
-    {{curItem}}
     <v-card max-width="18em" style="border-right: 1pt solid grey">
       <v-card-text>
         <div class="text-h5">

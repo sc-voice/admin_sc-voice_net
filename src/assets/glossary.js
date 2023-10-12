@@ -23,7 +23,7 @@ const Glossary = [{
     by redirecting the user to the appropriate website.
   `,
 },{
-  title: "Dhammaregen.net",
+  title: "Dhammaregen",
   summary: "German EBT-Site hosted by Silashin Sabbamitta",
   link: "https://dhammaregen.net",
   text: `

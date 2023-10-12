@@ -72,7 +72,7 @@
     `,
   },{
     title: "Dhammaregen.net",
-    summary: "German EBT-Site hosted by Ayya Sabbamitta Silashin",
+    summary: "German EBT-Site hosted by Silashin Sabbamitta",
     link: "https://dhammaregen.net",
     text: `
       German language EBT-Site
@@ -98,7 +98,7 @@
       to search for Early Buddhist Texts. 
       Users can search by SuttaCentral identifier (e.g., thig1.1) 
       or by search phrase (e.g., "root of suffering").
-      EBT-Sites provided curated language-specific examples
+      EBT-Sites provide curated language-specific examples
       that highlight key Dhamma concepts presented in the
       segmented translation archival maintained by SuttaCentral.
     `,
@@ -109,7 +109,7 @@
     link: "https://sc-voice.net",
     text: `
       The new website for SuttaCentral Voice displays
-      suttas, search results, suttas, and wiki pages
+      suttas, search results, and wiki pages
       using "cards" for side-by-side comparison.
       In addition sutta cards provide random access to segments 
       for a "click to hear" experience.
@@ -129,7 +129,7 @@
     summary: "Default Voice API server",
     link: "https://www.api.sc-voice.net",
     text: `
-      The default Voice API servers handles languages
+      The default Voice API server handles languages
       with few segmented translations.
       Languages with extensive translations should  be
       allocated their own API server (e.g., de.api.sc-voice.net)

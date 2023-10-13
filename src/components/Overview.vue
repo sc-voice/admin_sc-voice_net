@@ -7,7 +7,8 @@
           :height="diagramHeight()"
           class="diagram" />
       </div>
-      <Glossary :items="glossary" title="Glossary" 
+      <Glossary :items="glossary" 
+        :title="filterTitle"
         :filter="appStore.filter"
       />
     </v-responsive>
@@ -17,9 +18,13 @@
 <script setup>
   import Glossary from "./Glossary.vue";
   import { default as glossary } from "../assets/glossary.js"
-  import { ref } from "vue";
+  import { ref, computed } from "vue";
   import { useAppStore } from '../store/app.js'
   const appStore = useAppStore();
+  const filterTitle = computed(()=>{
+    let { filter, filters } = appStore;
+    return filters.find(f=>filter===f.value).title;
+  });
 
   var thumbnail = ref(true);
 
@@ -29,7 +34,7 @@
   }
 
   function diagramHeight() {
-    return thumbnail.value ? 150 : 450;
+    return thumbnail.value ? 100 : 450;
   }
 </script>
 

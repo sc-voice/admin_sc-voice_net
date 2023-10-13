@@ -21,11 +21,11 @@ const SERVERS = [{
 }]
 
 const FILTERS=[{
-  title: 'Show all',
-  icon: 'mdi-check-all',
+  title: 'Glossary',
+  icon: 'mdi-file-word-box',
   value: "",
 },{
-  title: 'Public Voice websites',
+  title: 'SuttaCentral Voice',
   icon: 'mdi-account-voice',
   value: 'voice',
 },{

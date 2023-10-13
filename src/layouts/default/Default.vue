@@ -24,6 +24,7 @@
   import DefaultView from './View.vue'
   import { useAppStore } from '../../store/app.js'
   import { ref, computed } from 'vue';
+
   const appStore = useAppStore();
   const { servers, filters, } = appStore;
 
@@ -43,7 +44,10 @@
 .current-filter {
 }
 .current-filter .v-icon {
-  color: 'chartruese';
+  color: lemonchiffon;
+}
+.current-filter .v-list-item__content {
+  color: lemonchiffon;
 }
 </style>
 

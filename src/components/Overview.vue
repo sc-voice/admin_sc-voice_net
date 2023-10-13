@@ -1,13 +1,14 @@
 <template>
   <v-container class="fill-height">
     <v-responsive class="align-start text-start fill-height">
-      <div class="text-h4"> Overview </div>
+      <div class="text-h5"> Architecture </div>
       <div @click="clickDiagram">
         <img src="https://raw.githubusercontent.com/sc-voice/admin.sc-voice.net/main/public/img/api.sc-voice.net.drawio.svg"
           :height="diagramHeight()"
           class="diagram" />
       </div>
-      <Glossary :items="glossary" title="Glossary" />
+      <Glossary :items="glossary" title="Glossary" 
+      />
     </v-responsive>
   </v-container>
 </template>

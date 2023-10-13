@@ -6,7 +6,7 @@
           {{title}}
         </div>
         <v-list density="compact">
-          <v-list-item v-for="item in items"
+          <v-list-item v-for="item in filteredItems"
             @click="itemIndex = item.value">
             <v-list-item-title>
               <v-icon :icon="itemIcon(item)" />
@@ -50,12 +50,19 @@
       required: true,
     },
     title: { type: String },
+    filter: { type: String },
   });
 
   var itemIndex = ref(0);
   const curItem = computed(
     ()=> props.items[itemIndex.value]
   );
+  const filteredItems = computed(()=>{
+    let { filter, items } = props;
+    return filter
+      ? items.filter(item=>item.hasOwnProperty(filter))
+      : items;
+  });
   function itemIcon(item) {
     return itemIndex.value === item.value
       ? "mdi-arrow-right-circle"

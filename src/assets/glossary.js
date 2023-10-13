@@ -3,6 +3,7 @@ const Glossary = [{
   summary: "Voice administration website",
   link: "https://admin.sc-voice.net",
   github: "sc-voice/admin.sc-voice.net",
+  admin: true,
   text: `
     (This server)
     Used by Voice administrators to monitor and maintain
@@ -11,8 +12,8 @@ const Glossary = [{
 },{
   title: "api.sc-voice.net",
   summary: "Voice API server source",
-  link: "https://github.com/sc-voice/api.sc-voice.net",
   github: "sc-voice/api.sc-voice.net",
+  api: "in development",
   text: `
     Github repository for all Voice API servers.
     The audio storage requirements for Voice API servers
@@ -26,6 +27,7 @@ const Glossary = [{
   title: "Dhammaregen",
   summary: "German EBT-Site hosted by Silashin Sabbamitta",
   link: "https://dhammaregen.net",
+  ebtsite: true,
   text: `
     German language EBT-Site
   `,
@@ -34,6 +36,8 @@ const Glossary = [{
   title: "Docker",
   summary: "API server containers",
   link: "https://hub.docker.com/search?q=scvoice",
+  admin: true,
+  api: "current",
   text: `
     Voice API server containers are hosted on Dockerhub
     as "scvoice/api.sc-voice.net".
@@ -43,6 +47,7 @@ const Glossary = [{
 },{
   title: "EBT-Site",
   summary: "Github Web Application based on the EBT-Site framework",
+  ebtsite: true,
   text: `
     EBT Sites are typically dedicated to a single language. 
     EBT Sites provide segment-by-segment audio
@@ -58,9 +63,21 @@ const Glossary = [{
   link: "https://ebt-site.sc-voice.net",
   github: "sc-voice/ebt-site3",
 },{
+  title: "sc-voice/ebt-vue3",
+  summary: "EBT-Site application library",
+  ebtsite: true,
+  link: "https://ebt-vue3.sc-voice.net",
+  github: "sc-voice/ebt-site3",
+  text: `
+    All EBT-Sites use the "ebt-vue3" library, which is an NPM package.
+    EBT-Vue3 is written using Vue3 and Vuetify3.
+  `,
+},{
   title: "en.api.sc-voice.net",
-  summary: "Default Voice API server",
+  summary: "English (EN) Voice API server",
   github: "sc-voice/api.sc-voice.net",
+  api: "in development",
+  admin: true,
   text: `
     (not implemented)
     English (EN) Voice API server
@@ -69,6 +86,7 @@ const Glossary = [{
   title: "s1.sc-voice.net",
   summary: "prototype Voice API server",
   link: "https://s1.sc-voice.net",
+  api: "production",
   github: "sc-voice/scv-server",
   text: `
     (deprecated)
@@ -80,6 +98,7 @@ const Glossary = [{
   summary: "SuttaCentral Voice website",
   link: "https://sc-voice.net",
   github: "sc-voice/sc-voice.net",
+  ebtsite: true,
   text: `
     The new website for SuttaCentral Voice displays
     suttas, search results, and wiki pages
@@ -91,6 +110,7 @@ const Glossary = [{
   title: "voice.suttacentral.net",
   summary: "Legacy Voice website",
   link: "https://voice.suttacentral.net",
+  api: "legacy",
   text: `
     The original Voice website has been superceded 
     by multiple EBT-Sites implemented using
@@ -103,6 +123,8 @@ const Glossary = [{
   summary: "Default Voice API server",
   link: "https://www.api.sc-voice.net",
   github: "sc-voice/api.sc-voice.net",
+  api: "in development",
+  admin: true,
   text: `
     The default Voice API server handles languages
     with few segmented translations.

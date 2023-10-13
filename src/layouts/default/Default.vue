@@ -1,7 +1,8 @@
 <template>
   <v-app>
     <default-bar class="bg-brown-darken-4"/>
-    <v-navigation-drawer floating permanent
+
+    <!--v-navigation-drawer floating permanent
       class="bg-brown-darken-3"
       expand-on-hover rail
     >
@@ -15,7 +16,7 @@
         :subtitle="svr.title"
       >
       </v-list-item>
-    </v-navigation-drawer>
+    </v-navigation-drawer-->
 
     <default-view />
   </v-app>

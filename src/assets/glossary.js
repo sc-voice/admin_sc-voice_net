@@ -63,6 +63,18 @@ const Glossary = [{
   link: "https://ebt-site.sc-voice.net",
   github: "sc-voice/ebt-site3",
 },{
+  title: "Linode Server",
+  summary: "Voice API server hardware",
+  link: "https://github.com/sc-voice/api.sc-voice.net/wiki/Linode-Server-Setup",
+  admin: true,
+  api: "in development",
+  text: `
+    Voice API servers are currently hosted in the Linode server cloud.
+    Linode provides cheap language scalability.
+    A Nanode 1GB has 25GB of disk storage, which is sufficient for 
+    the audio storage needs of a one or two languages.
+  `,
+},{
   title: "sc-voice/ebt-vue3",
   summary: "EBT-Site application library",
   voice: "EBT-Site",

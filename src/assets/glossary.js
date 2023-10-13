@@ -27,7 +27,7 @@ const Glossary = [{
   title: "Dhammaregen",
   summary: "German EBT-Site hosted by Silashin Sabbamitta",
   link: "https://dhammaregen.net",
-  ebtsite: true,
+  voice: "EBT-Site",
   text: `
     German language EBT-Site
   `,
@@ -47,7 +47,7 @@ const Glossary = [{
 },{
   title: "EBT-Site",
   summary: "Github Web Application based on the EBT-Site framework",
-  ebtsite: true,
+  voice: "EBT-Site",
   text: `
     EBT Sites are typically dedicated to a single language. 
     EBT Sites provide segment-by-segment audio
@@ -65,7 +65,7 @@ const Glossary = [{
 },{
   title: "sc-voice/ebt-vue3",
   summary: "EBT-Site application library",
-  ebtsite: true,
+  voice: "EBT-Site",
   link: "https://ebt-vue3.sc-voice.net",
   github: "sc-voice/ebt-site3",
   text: `
@@ -98,7 +98,7 @@ const Glossary = [{
   summary: "SuttaCentral Voice website",
   link: "https://sc-voice.net",
   github: "sc-voice/sc-voice.net",
-  ebtsite: true,
+  voice: "EBT-Site",
   text: `
     The new website for SuttaCentral Voice displays
     suttas, search results, and wiki pages
@@ -111,6 +111,7 @@ const Glossary = [{
   summary: "Legacy Voice website",
   link: "https://voice.suttacentral.net",
   api: "legacy",
+  voice: "(deprecated)",
   text: `
     The original Voice website has been superceded 
     by multiple EBT-Sites implemented using

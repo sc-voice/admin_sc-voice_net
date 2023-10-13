@@ -8,6 +8,7 @@
           class="diagram" />
       </div>
       <Glossary :items="glossary" title="Glossary" 
+        :filter="appStore.filter"
       />
     </v-responsive>
   </v-container>
@@ -17,6 +18,8 @@
   import Glossary from "./Glossary.vue";
   import { default as glossary } from "../assets/glossary.js"
   import { ref } from "vue";
+  import { useAppStore } from '../store/app.js'
+  const appStore = useAppStore();
 
   var thumbnail = ref(true);
 

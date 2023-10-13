@@ -1,5 +1,6 @@
 // Utilities
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
 
 const SERVERS = [{
   name:'www.api.sc-voice.net',
@@ -19,8 +20,28 @@ const SERVERS = [{
   title: 'Legacy scv-server',
 }]
 
+const FILTERS=[{
+  title: 'Show all',
+  icon: 'mdi-check-all',
+  value: "",
+},{
+  title: 'Public Voice websites',
+  icon: 'mdi-account-voice',
+  value: 'voice',
+},{
+  title: 'Administration',
+  icon: 'mdi-shield-crown',
+  value: 'admin',
+},{
+  title: 'Voice API Servers',
+  icon: 'mdi-server',
+  value: 'api',
+}];
+
 export const useAppStore = defineStore('app', {
   state: () => ({
     servers: SERVERS,
+    filters: FILTERS,
+    filter: ref('api'),
   }),
 })

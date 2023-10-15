@@ -1,4 +1,4 @@
-# admin.sc-voice.net
+# admin_sc-voice_net
 
-Administration Web User Interface for api.sc-voice.net servers.
+Github Repository for admin.sc-voice.net
 

@@ -2,7 +2,7 @@ const Glossary = [{
   title: "admin.sc-voice.net",
   summary: "Voice administration website",
   link: "https://admin.sc-voice.net",
-  github: "sc-voice/admin.sc-voice.net",
+  github: "sc-voice/admin_sc-voice_net",
   admin: true,
   text: `
     (This server)

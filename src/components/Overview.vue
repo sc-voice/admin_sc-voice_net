@@ -3,7 +3,7 @@
     <v-responsive class="align-start text-start fill-height">
       <div class="text-h5"> Architecture </div>
       <div @click="clickDiagram">
-        <img src="https://raw.githubusercontent.com/sc-voice/admin.sc-voice.net/main/public/img/api.sc-voice.net.drawio.svg"
+        <img src="https://raw.githubusercontent.com/sc-voice/admin_sc-voice_net/main/public/img/api.sc-voice.net.drawio.svg"
           :height="diagramHeight()"
           class="diagram" />
       </div>

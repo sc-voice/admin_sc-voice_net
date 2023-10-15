@@ -109,7 +109,7 @@ const Glossary = [{
   title: "sc-voice.net",
   summary: "SuttaCentral Voice website",
   link: "https://sc-voice.net",
-  github: "sc-voice/sc-voice.net",
+  github: "sc-voice/sc-voice_net",
   voice: "EBT-Site",
   text: `
     The new website for SuttaCentral Voice displays

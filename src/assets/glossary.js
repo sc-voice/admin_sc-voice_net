@@ -10,9 +10,9 @@ const Glossary = [{
     API servers. 
   `,
 },{
-  title: "api.sc-voice.net",
+  title: "api_sc-voice_net",
   summary: "Voice API server source",
-  github: "sc-voice/api.sc-voice.net",
+  github: "sc-voice/api_sc-voice_net",
   api: "in development",
   text: `
     Github repository for all Voice API servers.
@@ -65,7 +65,7 @@ const Glossary = [{
 },{
   title: "Linode Server",
   summary: "Voice API server hardware",
-  link: "https://github.com/sc-voice/api.sc-voice.net/wiki/Linode-Server-Setup",
+  link: "https://github.com/sc-voice/api_sc-voice_net/wiki/Linode-Server-Setup",
   admin: true,
   api: "in development",
   text: `
@@ -85,14 +85,14 @@ const Glossary = [{
     EBT-Vue3 is written using Vue3 and Vuetify3.
   `,
 },{
-  title: "en.api.sc-voice.net",
-  summary: "English (EN) Voice API server",
-  github: "sc-voice/api.sc-voice.net",
+  title: "pli.api.sc-voice.net",
+  summary: "Pali (pli) Voice API server",
+  github: "sc-voice/api_sc-voice_net",
   api: "in development",
   admin: true,
   text: `
     (not implemented)
-    English (EN) Voice API server
+    Pali (pli) Voice API server
   `,
 },{
   title: "s1.sc-voice.net",
@@ -135,14 +135,14 @@ const Glossary = [{
   title: "www.api.sc-voice.net",
   summary: "Default Voice API server",
   link: "https://www.api.sc-voice.net",
-  github: "sc-voice/api.sc-voice.net",
+  github: "sc-voice/api_sc-voice_net",
   api: "in development",
   admin: true,
   text: `
     The default Voice API server handles languages
     with few segmented translations.
     Languages with extensive translations should  be
-    allocated their own API server (e.g., de.api.sc-voice.net)
+    allocated their own API server (e.g., pli.api.sc-voice.net)
   `,
 }].map((item,i)=>{ item.value = i; return item});
 export default Glossary;

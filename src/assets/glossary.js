@@ -80,6 +80,7 @@ const Glossary = [{
   voice: "EBT-Site",
   link: "https://ebt-vue3.sc-voice.net",
   github: "sc-voice/ebt-site3",
+  library: "npm install ebt-vue3",
   text: `
     All EBT-Sites use the "ebt-vue3" library, which is an NPM package.
     EBT-Vue3 is written using Vue3 and Vuetify3.
@@ -119,11 +120,21 @@ const Glossary = [{
     for a "click to hear" experience.
   `,
 },{
+  title: "scv-bilara",
+  github: "sc-voice/scv-bilara",
+  summary: "Linux command-line search utility for EBT texts",
+  library: "npm install scv-bilara",
+  text: `
+    The scv-bilara repository is a Javascript library.
+    It is also a console application.
+    This is the search engine for SuttaCentral Voice.
+  `,
+},{
   title: "@sc-voice/state-log",
   github: "sc-voice/state-log",
-  link: "sc-voice.github.io/state-log",
+  link: "https://sc-voice.github.io/state-log",
   summary: "Javascript library for logging server JSON state",
-  library: true,
+  library: "npm install @sc-voice/state-log",
   text: `
     Javascript client and server library for monitoring 
     remote server state. 

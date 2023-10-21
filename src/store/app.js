@@ -32,6 +32,10 @@ const FILTERS=[{
   title: 'Voice API Servers',
   icon: 'mdi-server',
   value: 'api',
+},{
+  title: 'Software Libraries',
+  icon: 'mdi-library',
+  value: 'library',
 }];
 
 export const useAppStore = defineStore('app', {

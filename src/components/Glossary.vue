@@ -35,6 +35,9 @@
             </div>
           </a>
         </div>
+        <div v-if="curItem.library" class="library">
+          <div>{{curItem.library}}</div>
+        </div>
       </v-card-text>
     </v-card>
   </v-row>
@@ -91,4 +94,13 @@
   flex-flow: row nowrap;
   margin-top: 0.5em;
 }
+.library {
+  display: inline-block;
+  margin: 0.5em;
+  margin-left: 0px;
+  padding: 0.25em;
+  font-family: Courier;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 </style>

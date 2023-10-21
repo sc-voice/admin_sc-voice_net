@@ -119,6 +119,18 @@ const Glossary = [{
     for a "click to hear" experience.
   `,
 },{
+  title: "@sc-voice/state-log",
+  github: "sc-voice/state-log",
+  link: "sc-voice.github.io/state-log",
+  summary: "Javascript library for logging server JSON state",
+  library: true,
+  text: `
+    Javascript client and server library for monitoring 
+    remote server state. 
+    Compatible with any HTTP server that provide status information 
+    in JSON format.
+  `,
+},{
   title: "voice.suttacentral.net",
   summary: "Legacy Voice website",
   link: "https://voice.suttacentral.net",

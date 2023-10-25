@@ -161,6 +161,7 @@ const Glossary = [{
   github: "sc-voice/api_sc-voice_net",
   api: "in development",
   admin: true,
+  monitor: true,
   text: `
     The default Voice API server handles languages
     with few segmented translations.

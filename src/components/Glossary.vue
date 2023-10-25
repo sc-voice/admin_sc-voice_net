@@ -38,6 +38,9 @@
         <div v-if="curItem.library" class="library">
           <div>{{curItem.library}}</div>
         </div>
+        <div v-if="curItem.monitor">
+          <UrlMonitor />
+        </div>
       </v-card-text>
     </v-card>
   </v-row>
@@ -46,6 +49,7 @@
 <script setup>
   import { computed, ref } from "vue";
   import Github from "./Github.vue";
+  import UrlMonitor from "./UrlMonitor.vue";
 
   const props = defineProps({
     items: {

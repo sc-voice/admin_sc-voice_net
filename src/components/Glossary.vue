@@ -39,7 +39,7 @@
           <div>{{curItem.library}}</div>
         </div>
         <div v-if="curItem.monitor">
-          <UrlMonitor />
+          <UrlMonitor title="System Status" :url="curItem.monitor"/>
         </div>
       </v-card-text>
     </v-card>

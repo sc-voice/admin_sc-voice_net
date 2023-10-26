@@ -1,5 +1,5 @@
 <template>
-  PROBES
+  <div class="text-h5 mt-4">{{props.title}}</div>
   <v-card v-for="probe in probes" variant="outlined" class="probe-card">
     <v-card-title>
       <v-icon v-if="probe.type==='error'" color="red">
@@ -54,7 +54,7 @@
   </v-card>
 </template>
 <script setup>
-  import { ref } from "vue";
+  import { defineProps, ref } from "vue";
   import { StateLog, UrlProbe } from "@sc-voice/state-log";
   const statfsProps = [{
     prop: 'blocks', 
@@ -69,10 +69,16 @@
   var slider = ref(25);
   var probes = ref([]);
 
+  const props = defineProps({
+    title: String,
+    url: String,
+  });
+
+  console.log("UrlMonitor.setup()", props.title, props.url);
+
   async function updateProbes() {
     const msg = 'UrlMonitor.updateProbes()';
-    let url = "http://www.api.sc-voice.net/scv/probes";
-    url = new URL(url);
+    let url = new URL(props.url);
     try {
       let res = await UrlProbe.fetch(url);
       let json = await res.json();

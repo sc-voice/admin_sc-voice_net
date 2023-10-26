@@ -13,7 +13,7 @@ const Glossary = [{
   title: "api_sc-voice_net",
   summary: "Voice API server source",
   github: "sc-voice/api_sc-voice_net",
-  api: "in development",
+  api: "api.sc-voice.net",
   text: `
     Github repository for all Voice API servers.
     The audio storage requirements for Voice API servers
@@ -37,7 +37,7 @@ const Glossary = [{
   summary: "API server containers",
   link: "https://hub.docker.com/search?q=scvoice",
   admin: true,
-  api: "current",
+  api: "api.sc-voice.net",
   text: `
     Voice API server containers are hosted on Dockerhub
     as "scvoice/api.sc-voice.net".
@@ -67,7 +67,7 @@ const Glossary = [{
   summary: "Voice API server hardware",
   link: "https://github.com/sc-voice/api_sc-voice_net/wiki/Linode-Server-Setup",
   admin: true,
-  api: "in development",
+  api: "api.sc-voice.net",
   text: `
     Voice API servers are currently hosted in the Linode server cloud.
     Linode provides cheap language scalability.
@@ -89,8 +89,9 @@ const Glossary = [{
   title: "pli.api.sc-voice.net",
   summary: "Pali (pli) Voice API server",
   github: "sc-voice/api_sc-voice_net",
-  api: "in development",
+  api: "api.sc-voice.net",
   admin: true,
+  monitor: "https://pli.api.sc-voice.net/scv/probes",
   text: `
     (not implemented)
     Pali (pli) Voice API server
@@ -99,7 +100,7 @@ const Glossary = [{
   title: "s1.sc-voice.net",
   summary: "prototype Voice API server",
   link: "https://s1.sc-voice.net",
-  api: "production",
+  api: "voice.suttacentral.net",
   github: "sc-voice/scv-server",
   text: `
     (deprecated)
@@ -142,10 +143,43 @@ const Glossary = [{
     in JSON format.
   `,
 },{
+  title: "System Status",
+  summary: "SuttaCentral Voice server status",
+  link: "https://admin.sc-voice.net",
+  github: "sc-voice/admin_sc-voice_net",
+  api: "api.sc-voice.net",
+  admin: true,
+  monitor: "https://www.api.sc-voice.net/scv/probes",
+  text: `
+    The System Status panel shows the status of all Voice servers.
+    A green checkmark indicates that the given server is 
+    behaving normally.
+    A red exclamation indicates that the given server is
+    dead.
+    System status is provided by Voice API servers
+    (i.e., xxx.api.sc-voice.net).
+    If a Voice API server is down, it won't be able
+    to give system status.
+  `,
+  html: `
+    <table>
+    <caption>Sub-panel types</caption>
+    <tr><th>statfs</th><td>
+      sub-panels show file and disk use percentages. 
+      Disk caches need to be cleared when percentages fall below 10%.
+    </td></tr>
+    <tr><th>play/segment</th><td>
+      sub-panels are shown for older servers
+      that do not support the statfs API. These sub-panels show
+      the results of requesting audio for "thig1.1:1.1/en/soma".
+    </td></tr>
+    </table>
+  `,
+},{
   title: "voice.suttacentral.net",
   summary: "Legacy Voice website",
   link: "https://voice.suttacentral.net",
-  api: "legacy",
+  api: "voice.suttacentral.net",
   voice: "(deprecated)",
   text: `
     The original Voice website has been superceded 
@@ -159,7 +193,7 @@ const Glossary = [{
   summary: "Default Voice API server",
   link: "https://www.api.sc-voice.net",
   github: "sc-voice/api_sc-voice_net",
-  api: "in development",
+  api: "api.sc-voice.net",
   admin: true,
   monitor: "https://www.api.sc-voice.net/scv/probes",
   text: `

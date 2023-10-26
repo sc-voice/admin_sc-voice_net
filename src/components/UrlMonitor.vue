@@ -15,7 +15,7 @@
       <div v-if="probe.type === 'statfs'">
         <details>
           <summary>
-            {{probe.stateLog.date}}
+            {{probeSummary(probe)}}
           </summary>
           <!--v-slider v-model="slider" :label="probe.type"
             reverse :color="color(probe)" ></v-slider-->
@@ -38,7 +38,7 @@
       <div v-if="probe.type === 'play/segment'">
         <details>
           <summary>
-            {{probe.stateLog.date}}
+            {{probeSummary(probe)}}
           </summary>
           <!--v-slider v-model="slider" :label="probe.type"
             reverse :color="color(probe)" ></v-slider-->
@@ -75,6 +75,15 @@
   });
 
   console.log("UrlMonitor.setup()", props.title, props.url);
+
+  function probeSummary(probe) {
+    let { date, age, interval } = probe.stateLog;
+    let t = (age*interval/(60*60000)).toFixed(3);
+    return [
+      probe.stateLog.date.toLocaleString(),
+      `(${t} hours)`,
+    ].join(' ');
+  }
 
   async function updateProbes() {
     const msg = 'UrlMonitor.updateProbes()';

@@ -25,7 +25,6 @@
           </a>
         </div>
         <div class="glossary-summary"> {{curItem.summary}}</div>
-        <div class="glossary-text"> {{curItem.text}}</div>
         <div v-if="curItem.github" >
           <a :href="`https://github.com/${curItem.github}`"
             target="_blank">
@@ -35,11 +34,14 @@
             </div>
           </a>
         </div>
+        <div class="glossary-text"> {{curItem.text}}</div>
+        <div class="glossary-text" v-html="curItem.html" />
         <div v-if="curItem.library" class="library">
           <div>{{curItem.library}}</div>
         </div>
         <div v-if="curItem.monitor">
-          <UrlMonitor title="System Status" :url="curItem.monitor"/>
+          <UrlMonitor title="System Status" :url="curItem.monitor" 
+            :key="curItem.monitor"/>
         </div>
       </v-card-text>
     </v-card>
@@ -78,7 +80,7 @@
 
 </script>
 
-<style scoped>
+<style >
 .glossary {
   background-color: rgba(256,256,256, 0.1);
   max-width: 40em;
@@ -91,12 +93,25 @@
 }
 .glossary-summary {
   font-style: italic;
+  padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+.glossary-text table {
+  margin-top: 0.5em;
+  border-top: 1pt solid rgba(256,256,256, 0.5);
+}
+.glossary-text tr {
+  vertical-align: top;
+  text-align: left;
+}
+.glossary-text th {
+  padding-right: 0.5em;
 }
 .github {
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 0.5em;
+  margin-top: 0.1em;
+  padding-bottom: 1em;
 }
 .library {
   display: inline-block;

@@ -79,7 +79,7 @@ const Glossary = [{
   summary: "EBT-Site application library",
   voice: "EBT-Site",
   link: "https://ebt-vue3.sc-voice.net",
-  github: "sc-voice/ebt-site3",
+  github: "sc-voice/ebt-vue3",
   library: "npm install ebt-vue3",
   text: `
     All EBT-Sites use the "ebt-vue3" library, which is an NPM package.
@@ -88,13 +88,20 @@ const Glossary = [{
 },{
   title: "pli.api.sc-voice.net",
   summary: "Pali (pli) Voice API server",
+  link: "https://pli.api.sc-voice.net/status",
   github: "sc-voice/api_sc-voice_net",
   api: "api.sc-voice.net",
   admin: true,
   monitor: "https://pli.api.sc-voice.net/scv/probes",
   text: `
     (not implemented)
-    Pali (pli) Voice API server
+    Pali (pli) Voice API server will eventually
+    handle all Pali audio. Although any API server
+    can handle Pali, Pali audio requirements will probably
+    exceed those for any other language. 
+    In addition, all translations need Pali anyway, so
+    centralizing Pali audio frees up disk for all other
+    API servers.
   `,
 },{
   title: "s1.sc-voice.net",
@@ -141,6 +148,19 @@ const Glossary = [{
     remote server state. 
     Compatible with any HTTP server that provide status information 
     in JSON format.
+  `,
+},{
+  title: "staging.api.sc-voice.net",
+  summary: "Staging Voice API server",
+  link: "https://staging.api.sc-voice.net/status",
+  github: "sc-voice/api_sc-voice_net",
+  api: "api.sc-voice.net",
+  admin: true,
+  monitor: "https://staging.api.sc-voice.net/scv/probes",
+  text: `
+    The staging Voice API server is used to test
+    new software releases before pushing those
+    releases to www.api.sc-voice.net
   `,
 },{
   title: "System Status",
@@ -191,7 +211,7 @@ const Glossary = [{
 },{
   title: "www.api.sc-voice.net",
   summary: "Default Voice API server",
-  link: "https://www.api.sc-voice.net",
+  link: "https://www.api.sc-voice.net/status",
   github: "sc-voice/api_sc-voice_net",
   api: "api.sc-voice.net",
   admin: true,

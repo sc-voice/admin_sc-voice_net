@@ -169,7 +169,7 @@ const Glossary = [{
   github: "sc-voice/admin_sc-voice_net",
   api: "api.sc-voice.net",
   admin: true,
-  monitor: "https://www.api.sc-voice.net/scv/probes",
+  monitor: "https://staging.api.sc-voice.net/scv/probes",
   text: `
     The System Status panel shows the status of all Voice servers.
     A green checkmark indicates that the given server is 

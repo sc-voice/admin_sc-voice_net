@@ -94,6 +94,11 @@ const Glossary = [{
       </td>
     </tr>
     </table>
+
+    See also 
+    <a href="https://github.com/sc-voice/api_sc-voice_net/wiki/Release-Process">
+    Software Release Process
+    </a>
   `,
 },{
   title: "sc-voice/ebt-vue3",

@@ -74,6 +74,27 @@ const Glossary = [{
     A Nanode 1GB has 25GB of disk storage, which is sufficient for 
     the audio storage needs of a one or two languages.
   `,
+  html: `
+    <table>
+    <caption>Software Releases Management</caption>
+    <tr>
+      <th>Staging</th>
+      <td>
+        Staging servers are updated automatically when the 
+        Github api_sc-voice_net repository changes.
+      </td>
+    </tr>
+    <tr>
+      <th>Production</th>
+      <td>
+        Production servers are updated automatically when the 
+        major version number of the
+        Github api_sc-voice_net repository changes.
+        The version number is recorded in package.json.
+      </td>
+    </tr>
+    </table>
+  `,
 },{
   title: "sc-voice/ebt-vue3",
   summary: "EBT-Site application library",

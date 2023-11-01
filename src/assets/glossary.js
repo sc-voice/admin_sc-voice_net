@@ -76,29 +76,40 @@ const Glossary = [{
   `,
   html: `
     <table>
-    <caption>Software Releases Management</caption>
+    <caption>
+      <a href="https://github.com/sc-voice/api_sc-voice_net/wiki/Release-Process">
+        Software Release Process
+      </a>
+    </caption>
     <tr>
       <th>Staging</th>
       <td>
-        Staging servers are updated automatically when the 
+        Staging servers (e.g., staging.api.sc-voice.net)
+        are updated automatically 
+        with new content and software when the 
         Github api_sc-voice_net repository changes.
       </td>
     </tr>
     <tr>
       <th>Production</th>
       <td>
-        Production servers are updated automatically when the 
-        major version number of the
-        Github api_sc-voice_net repository changes.
-        The version number is recorded in package.json.
+        Production servers 
+        (e.g., www.api.sc-voice.net)
+        are updated automatically 
+        with new content and software when the 
+        as long as the minor version number of the
+        Github api_sc-voice_net repository does NOT change.
+      </td>
+    </tr>
+    <tr>
+      <th>EBT Sites</th>
+      <td>
+        EBT Site content and software are handled 
+        independently of Voice API servers
+        and are updated automatically.
       </td>
     </tr>
     </table>
-
-    See also 
-    <a href="https://github.com/sc-voice/api_sc-voice_net/wiki/Release-Process">
-    Software Release Process
-    </a>
   `,
 },{
   title: "sc-voice/ebt-vue3",

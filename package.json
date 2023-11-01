@@ -1,6 +1,6 @@
 {
   "name": "admin.sc-voice.net",
-  "version": "0.27.0",
+  "version": "0.27.1",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -23,7 +23,7 @@
     "merkle-json": "^2.6.0",
     "pinia": "^2.0.0",
     "roboto-fontface": "*",
-    "scv-esm": "^1.82.6",
+    "scv-esm": "^1.82.7",
     "vue": "^3.2.0",
     "vue-router": "^4.0.0",
     "vuetify": "^3.0.0"

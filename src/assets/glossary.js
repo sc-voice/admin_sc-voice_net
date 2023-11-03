@@ -96,7 +96,7 @@ const Glossary = [{
         Production servers 
         (e.g., www.api.sc-voice.net)
         are updated automatically 
-        with new content and software when the 
+        with new content and software 
         as long as the minor version number of the
         Github api_sc-voice_net repository does NOT change.
       </td>
@@ -104,8 +104,9 @@ const Glossary = [{
     <tr>
       <th>EBT Sites</th>
       <td>
-        EBT Site content and software are handled 
-        independently of Voice API servers
+        EBT Site wiki content/software are handled 
+        independently of sutta content/software 
+        managed by Voice API servers
         and are updated automatically.
       </td>
     </tr>

@@ -42,6 +42,6 @@ export const useAppStore = defineStore('app', {
   state: () => ({
     servers: SERVERS,
     filters: FILTERS,
-    filter: ref('api'),
+    filter: ref(''),
   }),
 })

@@ -7,7 +7,7 @@
         </div>
         <v-list density="compact">
           <v-list-item v-for="item in filteredItems"
-            @click="itemIndex = item.value">
+            @click="onClickItem(item)">
             <v-list-item-title>
               <v-icon :icon="itemIcon(item)" />
               {{item.title}}
@@ -49,9 +49,12 @@
 </template>
 
 <script setup>
-  import { computed, ref } from "vue";
+  import { watch, computed, ref } from "vue";
+  import { useRoute } from "vue-router";
   import Github from "./Github.vue";
   import UrlMonitor from "./UrlMonitor.vue";
+
+  var route = useRoute();
 
   const props = defineProps({
     items: {
@@ -78,6 +81,30 @@
       : "mdi-circle-small";
   }
 
+  async function onWatchHash(hash) {
+    const msg = "Glossary.onWatchHash";
+    let { items } = props;
+    let title = hash.replace(/^#\/?/,'');
+    let rex = new RegExp(title, "i");
+    let index = items.findIndex(item=>{
+      return rex.test(item.title) //|| title.search(item.id)
+    });
+    let item = items[index];
+    console.log(msg, {hash, title, index, item});
+    if (index >= 0) {
+      itemIndex.value = index;
+    }
+  }
+
+  function onClickItem(item) {
+    const msg = 'Glossary.onClickItem()';
+    itemIndex.value = item.value;
+    window.location.hash = `#/${item.title}`;
+    console.log(msg, route);
+  }
+
+  onWatchHash(route.hash);
+  watch(()=>route.hash, onWatchHash);
 </script>
 
 <style >

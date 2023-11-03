@@ -43,5 +43,11 @@ export const useAppStore = defineStore('app', {
     servers: SERVERS,
     filters: FILTERS,
     filter: ref(''),
+    itemIndex: ref(0),
   }),
+  actions: {
+    setItemIndex(value) {
+      this.itemIndex = value;
+    },
+  },
 })

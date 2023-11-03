@@ -51,10 +51,12 @@
 <script setup>
   import { watch, computed, ref } from "vue";
   import { useRoute } from "vue-router";
+  import { useAppStore } from '../store/app.js'
   import Github from "./Github.vue";
   import UrlMonitor from "./UrlMonitor.vue";
 
   var route = useRoute();
+  let app = useAppStore();
 
   const props = defineProps({
     items: {
@@ -65,9 +67,9 @@
     filter: { type: String },
   });
 
-  var itemIndex = ref(0);
+  //var itemIndex = ref(0);
   const curItem = computed(
-    ()=> props.items[itemIndex.value]
+    ()=> props.items[app.itemIndex]
   );
   const filteredItems = computed(()=>{
     let { filter, items } = props;
@@ -76,7 +78,7 @@
       : items;
   });
   function itemIcon(item) {
-    return itemIndex.value === item.value
+    return app.itemIndex === item.value
       ? "mdi-arrow-right-circle"
       : "mdi-circle-small";
   }
@@ -90,15 +92,14 @@
       return rex.test(item.title) //|| title.search(item.id)
     });
     let item = items[index];
-    console.log(msg, {hash, title, index, item});
     if (index >= 0) {
-      itemIndex.value = index;
+      app.setItemIndex(index);
     }
   }
 
   function onClickItem(item) {
     const msg = 'Glossary.onClickItem()';
-    itemIndex.value = item.value;
+    app.setItemIndex(item.value);
     window.location.hash = `#/${item.title}`;
     console.log(msg, route);
   }

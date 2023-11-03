@@ -124,6 +124,15 @@ const Glossary = [{
     EBT-Vue3 is written using Vue3 and Vuetify3.
   `,
 },{
+  title: "Site-TBA",
+  summary: "French EBT-Site hosted by Noé Ismet",
+  link: "https://www.pannabijani.net/site-tba",
+  voice: "EBT-Site",
+  text: `
+    French language EBT-Site
+  `,
+  github: "pannabijani/site-tba",
+},{
   title: "pli.api.sc-voice.net",
   summary: "Pali (pli) Voice API server",
   link: "https://pli.api.sc-voice.net/status",

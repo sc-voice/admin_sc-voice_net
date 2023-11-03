@@ -7,7 +7,9 @@
       </div>
     </v-app-bar-title>
     <v-spacer />
-    <v-icon class="mr-5" @click="onLink" >mdi-link</v-icon>
+    <v-icon class="mr-5" @click="onLink" title="Markdown link">
+      mdi-link
+    </v-icon>
     <div class="mr-5">v{{PACKAGE.version}}</div>
   </v-app-bar>
 </template>

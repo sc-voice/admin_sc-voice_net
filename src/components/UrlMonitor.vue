@@ -16,7 +16,6 @@
         <details>
           <summary>
             {{probeSummary(probe)}}
-            {{probeColor(probe)}}
           </summary>
           <!--v-slider v-model="slider" :label="probe.type"
             reverse :color="probeColor(probe)" ></v-slider-->

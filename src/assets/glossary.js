@@ -130,7 +130,7 @@ const Glossary = [{
   text: `
     French language EBT-Site
   `,
-  github: "https://github.com/pannabijani/site-tba",
+  github: "pannabijani/site-tba",
 },{
   title: "pli.api.sc-voice.net",
   summary: "Pali (pli) Voice API server",

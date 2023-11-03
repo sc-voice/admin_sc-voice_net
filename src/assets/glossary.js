@@ -105,9 +105,9 @@ const Glossary = [{
       <th>EBT Sites</th>
       <td>
         EBT Site wiki content/software are handled 
-        independently of sutta content/software 
-        managed by Voice API servers
-        and are updated automatically.
+        independently of sutta content/software; 
+        the former is updated automatically,
+        the latter is managed by Voice API servers.
       </td>
     </tr>
     </table>

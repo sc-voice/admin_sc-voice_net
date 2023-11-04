@@ -210,6 +210,119 @@ const Glossary = [{
     releases to www.api.sc-voice.net
   `,
 },{
+  title: "SuttaCentral Audio Links",
+  summary: "Links from SuttaCentral to SuttaCentral Voice",
+  github: "sc-voice/api_sc-voice_net",
+  admin: true,
+  text: `
+    SuttaCentral provides audio links to SuttaCentral Voice.
+    These links let users hear the Early Buddhist Texts
+    in Pali, English, German and other languages.
+    SuttaCentral has a vast library of Buddhist documents.
+    However, only the segmented texts are supported by
+    SuttaCentral Voice. The SuttaCentral audio links
+    originally went directly to the Voice website.
+    However, there are now multiple, language-specific
+    Voice websites (e.g., Dhammagen.net). 
+  `,
+  html: `
+    <p class="mt-3">
+    To handle the multiplicity of Voice websites,
+    SuttaCentral audio links should now be directed
+    to the Voice application server at
+    <code>https://www.api.sc-voice.net</code>
+    </p>
+    <table>
+    <caption>SuttaCentral Links</caption>
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>https://www.api.sc-voice.net/...</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Site</td>
+      <td>
+        <pre>/scv/ebt-site/site/:lang</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/site/en"
+          target="_blank">
+          Listen on SC Voice
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Suttaplex<sup>1</sup></th>
+      <td>
+        <pre>/scv/ebt-site/:sutta_uid/:lang</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/thig1.1/en"
+          target="_blank">
+          thig1.1/en
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Suttaplex<sup>2</sup></th>
+      <td>
+        <pre>/scv/ebt-site/:sutta_uid/:lang</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/cnd11/de"
+          target="_blank">
+          cnd10/de
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Sutta</th>
+      <td>
+        <pre>/scv/ebt-site/:sutta_uid/:lang/:author</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/thig1.1/de/sabbamitta"
+          target="_blank">
+          thig1.1/de/sabbamitta
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Segment</th>
+      <td>
+        <pre>/scv/ebt-site/:seg_id/:lang/:author</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/thig1.1:1.1/en/soma"
+          target="_blank">
+          thig1.1:1.1/en/soma
+        </a>
+      </td>
+    </tr>
+    </table>
+    <div class="legend">
+      <div><sup>1</sup>translated</div>
+      <div><sup>2</sup>untranslated</div>
+    </div>
+    <table>
+      <caption>URL Variables</caption>
+      <tr>
+        <th>:sutta_uid</th><td>Sutta identifier (e.g., "thig1.1")</td>
+      </tr>
+      <tr><th>:lang</th>
+        <td>Language identifier (e.g., "en")</td>
+      </tr>
+      <tr><th>:author</th>
+        <td>Author identifier (e.g., "sujato")</td>
+      </tr>
+      <tr><th>:seg_id</th>
+        <td>Segment identifier (e.g., "thig1.1:1.1")</td>
+      </tr>
+    </table>
+  `,
+},{
   title: "System Status",
   summary: "SuttaCentral Voice server status",
   link: "https://admin.sc-voice.net",

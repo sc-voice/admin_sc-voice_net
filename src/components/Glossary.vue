@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mt-5" >
+  <v-row class="mt-5 glossary" >
     <v-card max-width="18em" style="border-right: 1pt solid grey">
       <v-card-text>
         <div class="text-h5">
@@ -16,7 +16,7 @@
         </v-list>
       </v-card-text>
     </v-card>
-    <v-card max-width="30em">
+    <v-card max-width="40em">
       <v-card-text>
         <div class="glossary-title"> 
           {{curItem.title}}
@@ -111,8 +111,13 @@
 <style >
 .glossary {
   background-color: rgba(256,256,256, 0.1);
-  max-width: 40em;
+  min-width: 60em;
   padding: 1em;
+}
+.glossary .legend {
+  border-left: 1pt solid rgba(255,255,255,0.5);
+  padding-left: 0.5em;
+  width: 10em;
 }
 .glossary-title {
   margin-top: 1em;
@@ -124,6 +129,13 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+.glossary-text ul {
+  margin-left: 2em;
+}
+.glossary-text em {
+  font-weight: 700;
+  margin-right: 1em;
+}
 .glossary-text table {
   margin-top: 0.5em;
   border-top: 1pt solid rgba(256,256,256, 0.5);
@@ -131,6 +143,9 @@
 .glossary-text tr {
   vertical-align: top;
   text-align: left;
+}
+.glossary-text td {
+  padding-right: 0.5em;
 }
 .glossary-text th {
   padding-right: 0.5em;

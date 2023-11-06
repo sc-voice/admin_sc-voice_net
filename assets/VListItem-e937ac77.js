@@ -1,4 +1,4 @@
-import{ac as se,p as b,n as I,Z as bt,ad as $e,X as K,g as de,ae as St,r as x,af as wt,T as ve,ag as _t,y as kt,c as g,e as k,q as u,C as Ne,V as ze,s as V,w as F,P as Ct,R as xt,a0 as re,a8 as Re,Q as q,a1 as Tt,W as R,ah as O,ai as Oe,aj as _e,ak as Pt,al as Vt,f as At,b as It,L as ke,$ as U,t as me,v as ge,am as Et,u as De,an as Lt,ao as Bt,ap as $t,aq as Ce,ar as Nt,as as xe,i as X,h as Y,at as L,j as zt,o as Me,A as Te,au as Pe,av as Rt}from"./index-4e35c67f.js";const Ot=["top","bottom"],Dt=["start","end","left","right"];function Pn(e,a){let[n,t]=e.split(" ");return t||(t=se(Ot,n)?"start":se(Dt,n)?"top":"center"),{side:Ve(n,a),align:Ve(t,a)}}function Ve(e,a){return e==="start"?a?"right":"left":e==="end"?a?"left":"right":e}const B=b({class:[String,Array],style:{type:[String,Array,Object],default:null}},"component");function He(e){let a=arguments.length>1&&arguments[1]!==void 0?arguments[1]:"div",n=arguments.length>2?arguments[2]:void 0;return I()({name:n??bt($e(e.replace(/__/g,"-"))),props:{tag:{type:String,default:a},...B()},setup(t,s){let{slots:i}=s;return()=>{var r;return K(t.tag,{class:[e,t.class],style:t.style},(r=i.default)==null?void 0:r.call(i))}}})}function D(e){const a=de("useRender");a.render=e}const Vn=[{title:"admin.sc-voice.net",summary:"Voice administration website",link:"https://admin.sc-voice.net",github:"sc-voice/admin_sc-voice_net",admin:!0,text:`
+import{ac as se,p as b,n as I,Z as bt,ad as $e,X as K,g as de,ae as St,r as x,af as wt,T as ve,ag as _t,y as kt,c as g,e as k,q as u,C as Ne,V as ze,s as V,w as F,P as Ct,R as xt,a0 as re,a8 as Re,Q as q,a1 as Tt,W as R,ah as O,ai as Oe,aj as _e,ak as Pt,al as Vt,f as At,b as It,L as ke,$ as U,t as me,v as ge,am as Et,u as De,an as Lt,ao as Bt,ap as $t,aq as Ce,ar as Nt,as as xe,i as X,h as Y,at as L,j as zt,o as Me,A as Te,au as Pe,av as Rt}from"./index-0aff2d0f.js";const Ot=["top","bottom"],Dt=["start","end","left","right"];function Pn(e,a){let[n,t]=e.split(" ");return t||(t=se(Ot,n)?"start":se(Dt,n)?"top":"center"),{side:Ve(n,a),align:Ve(t,a)}}function Ve(e,a){return e==="start"?a?"right":"left":e==="end"?a?"left":"right":e}const B=b({class:[String,Array],style:{type:[String,Array,Object],default:null}},"component");function He(e){let a=arguments.length>1&&arguments[1]!==void 0?arguments[1]:"div",n=arguments.length>2?arguments[2]:void 0;return I()({name:n??bt($e(e.replace(/__/g,"-"))),props:{tag:{type:String,default:a},...B()},setup(t,s){let{slots:i}=s;return()=>{var r;return K(t.tag,{class:[e,t.class],style:t.style},(r=i.default)==null?void 0:r.call(i))}}})}function D(e){const a=de("useRender");a.render=e}const Vn=[{title:"admin.sc-voice.net",summary:"Voice administration website",link:"https://admin.sc-voice.net",github:"sc-voice/admin_sc-voice_net",admin:!0,text:`
     (This server)
     Used by Voice administrators to monitor and maintain
     API servers. 
@@ -127,8 +127,12 @@ import{ac as se,p as b,n as I,Z as bt,ad as $e,X as K,g as de,ae as St,r as x,af
     <table>
     <caption>
       SuttaCentral Links
-      <div style="font-size: smaller; background-color:#9C5B01;">
-        NOTE: Voice only supports segmented Pali documents.
+      <div style="font-size: smaller;">
+        NOTE: Voice only supports 
+        <code style="background-color:#9C5B01">root/pli/ms/sutta</code>
+        or 
+        <code style="background-color:#9C5B01">root/pli/ms/vinaya</code> 
+        Bilara documents.
       </div>
     </caption>
     <thead>
@@ -175,7 +179,7 @@ import{ac as se,p as b,n as I,Z as bt,ad as $e,X as K,g as de,ae as St,r as x,af
       </td>
     </tr>
     <tr>
-      <td>Sutta</th>
+      <td>Sutta<sup>3</sup></th>
       <td>
         <pre>/scv/ebt-site/:sutta_uid/:lang/:author</pre>
       </td>
@@ -187,7 +191,7 @@ import{ac as se,p as b,n as I,Z as bt,ad as $e,X as K,g as de,ae as St,r as x,af
       </td>
     </tr>
     <tr>
-      <td>Segment</th>
+      <td>Segment<sup>4</sup></th>
       <td>
         <pre>/scv/ebt-site/:seg_id/:lang/:author</pre>
       </td>
@@ -202,6 +206,8 @@ import{ac as se,p as b,n as I,Z as bt,ad as $e,X as K,g as de,ae as St,r as x,af
     <div class="legend">
       <div><sup>1</sup>translated</div>
       <div><sup>2</sup>untranslated</div>
+      <div><sup>3</sup>please implement in SuttaCentral</div>
+      <div><sup>4</sup>possible feature for SuttaCentral</div>
     </div>
     <table>
       <caption>URL Variables</caption>

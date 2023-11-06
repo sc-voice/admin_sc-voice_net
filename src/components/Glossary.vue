@@ -43,36 +43,60 @@
           <UrlMonitor title="System Status" :url="curItem.monitor" 
             :key="curItem.monitor"/>
         </div>
+        <div v-if="curItem.issue" class="issue">
+          <div v-html="curItem.issue_body.value"/>
+        </div>
       </v-card-text>
     </v-card>
   </v-row>
 </template>
 
 <script setup>
+  import { Octokit } from "https://esm.sh/octokit";
   import { watch, computed, ref } from "vue";
   import { useRoute } from "vue-router";
   import { useAppStore } from '../store/app.js'
   import Github from "./Github.vue";
   import UrlMonitor from "./UrlMonitor.vue";
+  import { default as glossary } from "../assets/glossary.js"
+  import { default as MarkdownIt } from "markdown-it"
+  import { default as Emoji } from "markdown-it-emoji"
 
   var route = useRoute();
   let app = useAppStore();
+  let issues = {};
+  let md = MarkdownIt({
+    html: true,
+    linkify: true,
+  });
+  md.use(Emoji);
+
+  let items = [...glossary];
+  for (let i=0; i<items.length; i++) {
+    let item = items[i];
+    if (item.issue) {
+      item = Object.assign({COPY:true}, items[i]);
+      items[i] = item;
+      item.issue_body = ref(item.issue+'...');
+      getIssue(item.issue).then(body=>{
+        let html = md.render(body, {});
+        //item.issue_body.value = body;
+        item.issue_body.value = html;
+      });
+    }
+  }
 
   const props = defineProps({
-    items: {
-      type: Array,
-      required: true,
-    },
     title: { type: String },
     filter: { type: String },
   });
 
   //var itemIndex = ref(0);
   const curItem = computed(
-    ()=> props.items[app.itemIndex]
+    ()=> items[app.itemIndex]
   );
   const filteredItems = computed(()=>{
-    let { filter, items } = props;
+    let { filter, } = props;
     return filter
       ? items.filter(item=>item.hasOwnProperty(filter))
       : items;
@@ -83,9 +107,26 @@
       : "mdi-circle-small";
   }
 
+  async function getIssue(issue) {
+    const msg = 'Glossary.getIssue()';
+    const octokit = new Octokit({
+      //auth: 'YOUR-TOKEN'
+    })
+    let { owner, repo, issue_number } = issue;
+    issue_number = issue_number+'';
+
+    let path = `GET /repos/${owner}/${repo}/issues/{issue_number}`;
+    let res = await octokit.request(path, {
+      owner, repo, issue_number,
+      headers: {
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+    })
+    return res.data.body;
+  }
+
   async function onWatchHash(hash) {
     const msg = "Glossary.onWatchHash";
-    let { items } = props;
     let title = hash.replace(/^#\/?/,'');
     let rex = new RegExp(title, "i");
     let index = items.findIndex(item=>{
@@ -163,6 +204,9 @@
   padding: 0.25em;
   font-family: Courier;
   background-color: rgba(255, 255, 255, 0.2);
+}
+.issue ul {
+  margin-left: 1em;
 }
 
 </style>

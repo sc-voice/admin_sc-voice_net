@@ -7,7 +7,7 @@
           :height="diagramHeight()"
           class="diagram" />
       </div>
-      <Glossary :items="glossary" 
+      <Glossary 
         :title="filterTitle"
         :filter="appStore.filter"
       />
@@ -17,7 +17,6 @@
 
 <script setup>
   import Glossary from "./Glossary.vue";
-  import { default as glossary } from "../assets/glossary.js"
   import { ref, computed } from "vue";
   import { useAppStore } from '../store/app.js'
   const appStore = useAppStore();

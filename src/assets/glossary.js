@@ -63,6 +63,12 @@ const Glossary = [{
   link: "https://ebt-site.sc-voice.net",
   github: "sc-voice/ebt-site3",
 },{
+  title: "Feature Backlog",
+  summary: "Things we plan to do for SuttaCentral Voice",
+  issue: { owner:"dhammaregen", repo:"dhammaregen3", issue_number:1 },
+  link: "https://github.com/dhammaregen/dhammaregen3/issues/1",
+  admin: true,
+},{
   title: "Linode Server",
   summary: "Voice API server hardware",
   link: "https://github.com/sc-voice/api_sc-voice_net/wiki/Linode-Server-Setup",
@@ -233,7 +239,12 @@ const Glossary = [{
     <code>https://www.api.sc-voice.net</code>
     </p>
     <table>
-    <caption>SuttaCentral Links</caption>
+    <caption>
+      SuttaCentral Links
+      <div style="font-size: smaller; background-color:#9C5B01;">
+        NOTE: Voice only supports segmented Pali documents.
+      </div>
+    </caption>
     <thead>
       <tr>
         <th>Source</th>

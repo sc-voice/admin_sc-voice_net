@@ -241,8 +241,12 @@ const Glossary = [{
     <table>
     <caption>
       SuttaCentral Links
-      <div style="font-size: smaller; background-color:#9C5B01;">
-        NOTE: Voice only supports segmented Pali documents.
+      <div style="font-size: smaller;">
+        NOTE: Voice only supports 
+        <code style="background-color:#9C5B01">root/pli/ms/sutta</code>
+        or 
+        <code style="background-color:#9C5B01">root/pli/ms/vinaya</code> 
+        Bilara documents.
       </div>
     </caption>
     <thead>
@@ -289,7 +293,7 @@ const Glossary = [{
       </td>
     </tr>
     <tr>
-      <td>Sutta</th>
+      <td>Sutta<sup>3</sup></th>
       <td>
         <pre>/scv/ebt-site/:sutta_uid/:lang/:author</pre>
       </td>
@@ -301,7 +305,7 @@ const Glossary = [{
       </td>
     </tr>
     <tr>
-      <td>Segment</th>
+      <td>Segment<sup>4</sup></th>
       <td>
         <pre>/scv/ebt-site/:seg_id/:lang/:author</pre>
       </td>
@@ -316,6 +320,8 @@ const Glossary = [{
     <div class="legend">
       <div><sup>1</sup>translated</div>
       <div><sup>2</sup>untranslated</div>
+      <div><sup>3</sup>please implement in SuttaCentral</div>
+      <div><sup>4</sup>possible feature for SuttaCentral</div>
     </div>
     <table>
       <caption>URL Variables</caption>

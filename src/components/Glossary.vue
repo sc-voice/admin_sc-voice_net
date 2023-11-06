@@ -158,7 +158,6 @@
 .glossary .legend {
   border-left: 1pt solid rgba(255,255,255,0.5);
   padding-left: 0.5em;
-  width: 10em;
 }
 .glossary-title {
   margin-top: 1em;

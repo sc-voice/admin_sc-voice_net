@@ -63,6 +63,17 @@ const Glossary = [{
   link: "https://ebt-site.sc-voice.net",
   github: "sc-voice/ebt-site3",
 },{
+  title: "EBT-Vue3",
+  summary: "EBT-Site application library",
+  voice: "EBT-Site",
+  link: "https://ebt-vue3.sc-voice.net",
+  github: "sc-voice/ebt-vue3",
+  library: "npm install ebt-vue3",
+  text: `
+    All EBT-Sites use the "ebt-vue3" library, which is an NPM package.
+    EBT-Vue3 is written using Vue3 and Vuetify3.
+  `,
+},{
   title: "Feature Backlog",
   summary: "Things we plan to do for SuttaCentral Voice",
   issue: { owner:"dhammaregen", repo:"dhammaregen3", issue_number:1 },
@@ -117,17 +128,6 @@ const Glossary = [{
       </td>
     </tr>
     </table>
-  `,
-},{
-  title: "sc-voice/ebt-vue3",
-  summary: "EBT-Site application library",
-  voice: "EBT-Site",
-  link: "https://ebt-vue3.sc-voice.net",
-  github: "sc-voice/ebt-vue3",
-  library: "npm install ebt-vue3",
-  text: `
-    All EBT-Sites use the "ebt-vue3" library, which is an NPM package.
-    EBT-Vue3 is written using Vue3 and Vuetify3.
   `,
 },{
   title: "Site-TBA",

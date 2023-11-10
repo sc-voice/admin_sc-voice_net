@@ -281,6 +281,30 @@ const Glossary = [{
       </td>
     </tr>
     <tr>
+      <td>Suttaplex<sup>1</sup></th>
+      <td>
+        <pre>/scv/ebt-site/:sutta_uid/:lang</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/an1.171/fr"
+          target="_blank">
+          an1.171/fr
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Suttaplex<sup>1</sup></th>
+      <td>
+        <pre>/scv/ebt-site/:sutta_uid/:lang</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/an1.2/pt"
+          target="_blank">
+          an1.2/pt
+        </a>
+      </td>
+    </tr>
+    <tr>
       <td>Suttaplex<sup>2</sup></th>
       <td>
         <pre>/scv/ebt-site/:sutta_uid/:lang</pre>
@@ -293,7 +317,19 @@ const Glossary = [{
       </td>
     </tr>
     <tr>
-      <td>Sutta<sup>3</sup></th>
+      <td>Suttaplex<sup>3</sup></th>
+      <td>
+        <pre>/scv/ebt-site/:sutta_uid/:lang</pre>
+      </td>
+      <td>
+        <a href="https://www.api.sc-voice.net/scv/ebt-site/thig1.1/in"
+          target="_blank">
+          thig1.1/in
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Sutta<sup>4</sup></th>
       <td>
         <pre>/scv/ebt-site/:sutta_uid/:lang/:author</pre>
       </td>
@@ -305,7 +341,7 @@ const Glossary = [{
       </td>
     </tr>
     <tr>
-      <td>Segment<sup>4</sup></th>
+      <td>Segment<sup>5</sup></th>
       <td>
         <pre>/scv/ebt-site/:seg_id/:lang/:author</pre>
       </td>
@@ -320,8 +356,9 @@ const Glossary = [{
     <div class="legend">
       <div><sup>1</sup>translated</div>
       <div><sup>2</sup>untranslated</div>
-      <div><sup>3</sup>please implement in SuttaCentral</div>
-      <div><sup>4</sup>possible feature for SuttaCentral</div>
+      <div><sup>3</sup>unsupported language (Indonesian)</div>
+      <div><sup>4</sup>please implement in SuttaCentral</div>
+      <div><sup>5</sup>possible feature for SuttaCentral</div>
     </div>
     <table>
       <caption>URL Variables</caption>

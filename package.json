@@ -1,6 +1,6 @@
 {
   "name": "admin.sc-voice.net",
-  "version": "0.41.53",
+  "version": "0.41.54",
   "private": true,
   "scripts": {
     "dev": "vite",

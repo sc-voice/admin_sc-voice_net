@@ -45,6 +45,15 @@ const Glossary = [{
     sc-voice/api.sc-voice.net repository (see above).
   `,
 },{
+  title: "ebt-deepl",
+  summary: "EBT DeepL translation adaptor",
+  github: "sc-voice/ebt-deepl",
+  library: "npm install ebt-deepl (TBD)",
+  text: `
+    Github repository for adding human-editable DeepL
+    EBT translations. Includes glossary support.
+  `,
+},{
   title: "EBT-Site",
   summary: "Github Web Application based on the EBT-Site framework",
   voice: "EBT-Site",

@@ -45,6 +45,16 @@ const Glossary = [{
     sc-voice/api.sc-voice.net repository (see above).
   `,
 },{
+  title: "ebt-data",
+  summary: "Pruned copy of bilara-data",
+  github: "ebt-site/ebt-data",
+  admin: true,
+  text: `
+    SC-Voice is based on the Pali texts and translations, so it doesn't
+    need the majority of information stored in the SuttaCentral
+    bilara-data repository.
+  `,
+},{
   title: "ebt-deepl",
   summary: "EBT DeepL translation adaptor",
   github: "sc-voice/ebt-deepl",

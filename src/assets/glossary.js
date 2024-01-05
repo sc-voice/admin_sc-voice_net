@@ -24,6 +24,16 @@ const Glossary = [{
     by redirecting the user to the appropriate website.
   `,
 },{
+  title: "bilara-data",
+  summary: "SuttaCentral Bilara repository",
+  github: "suttacentral/bilara-data",
+  text: `
+    The bilara-data repository provides the raw data filtered
+    and copied into https://github.com/ebt-site/ebt-data for
+    use in SuttaCentral Voice. The bilara-data repository is quite
+    large. The ebt-data repository contains only pli/ms content.
+  `,
+},{
   title: "Dhammaregen",
   summary: "German EBT-Site hosted by Silashin Sabbamitta",
   link: "https://dhammaregen.net",

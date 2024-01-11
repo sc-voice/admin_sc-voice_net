@@ -159,7 +159,7 @@ const Glossary = [{
     </table>
   `,
 },{
-  title: "Site-TBA",
+  title: "Site-TBA (EBT-Site/FR)",
   summary: "French EBT-Site hosted by Noé Ismet",
   link: "https://pannabijani.github.io/site-tba",
   voice: "EBT-Site",

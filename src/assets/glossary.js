@@ -92,6 +92,13 @@ const Glossary = [{
   link: "https://ebt-site.sc-voice.net",
   github: "sc-voice/ebt-site3",
 },{
+  title: "EBT-Site/FR",
+  summary: "French EBT-SIte"
+  github: "pannabijani/site-tba"
+  text: `
+    (@noeismet TBD)
+  `,
+},{
   title: "EBT-Vue3",
   summary: "EBT-Site application library",
   voice: "EBT-Site",

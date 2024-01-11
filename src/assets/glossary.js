@@ -93,8 +93,8 @@ const Glossary = [{
   github: "sc-voice/ebt-site3",
 },{
   title: "EBT-Site/FR",
-  summary: "French EBT-SIte"
-  github: "pannabijani/site-tba"
+  summary: "French EBT-SIte",
+  github: "pannabijani/site-tba",
   text: `
     (@noeismet TBD)
   `,

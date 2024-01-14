@@ -34,6 +34,16 @@ const Glossary = [{
     large. The ebt-data repository contains only pli/ms content.
   `,
 },{
+  title: "d3_sc-voice_net",
+  summary: "Tipitaka network graphs based on SC-Voice examples",
+  github: "sc-voice/d3_sc-voice_net",
+  link: "https://d3.sc-voice.net",
+  text: `
+    Collection of D3 Disjoint Force-Directed Graphs 
+    that highlight the links between examples and
+    their corresponding Tipitaka documents.
+  `,
+},{
   title: "Dhammaregen",
   summary: "German EBT-Site hosted by Silashin Sabbamitta",
   link: "https://dhammaregen.net",

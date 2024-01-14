@@ -84,6 +84,12 @@ const Glossary = [{
     EBT translations. Includes glossary support.
   `,
 },{
+  title: "ebt-deepl feature backlog",
+  summary: "Things we plan to do for ebt-deepl",
+  issue: { owner:"sc-voice", repo:"ebt-deepl", issue_number:1 },
+  link: "https://github.com/sc-voice/ebt-deepl/issues/1",
+  admin: true,
+},{
   title: "EBT-Site",
   summary: "Github Web Application based on the EBT-Site framework",
   voice: "EBT-Site",

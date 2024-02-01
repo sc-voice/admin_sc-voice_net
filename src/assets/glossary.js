@@ -34,6 +34,13 @@ const Glossary = [{
     large. The ebt-data repository contains only pli/ms content.
   `,
 },{
+  title: "bilara-data-deepl",
+  summary: "SuttaCentral Bilara repository (ebt-deepl fork)",
+  github: "sc-voice/bilara-data-deepl",
+  text: `
+    Fork of bilara-data used to upload ebt-deepl pre-translations.
+  `,
+},{
   title: "d3_sc-voice_net",
   summary: "Tipitaka network graphs based on SC-Voice examples",
   github: "sc-voice/d3_sc-voice_net",

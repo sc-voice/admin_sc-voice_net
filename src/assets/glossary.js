@@ -232,6 +232,16 @@ const Glossary = [{
     This is the search engine for SuttaCentral Voice.
   `,
 },{
+  title: "scv-esm",
+  github: "sc-voice/scv-esm",
+  summary: "SuttaCentral libraries for SC-Voice",
+  library: "npm install scv-esm",
+  text: `
+    The scv-esm repository is a Javascript web/desktop library
+    for working with information stored in bilara-data
+    format.
+  `,
+},{
   title: "@sc-voice/state-log",
   github: "sc-voice/state-log",
   link: "https://sc-voice.github.io/state-log",

@@ -462,6 +462,16 @@ const Glossary = [{
     </table>
   `,
 },{
+  title: "legacy.sc-voice.net",
+  summary: "Legacy Voice website",
+  link: "https://voice.suttacentral.net",
+  api: "voice.suttacentral.net",
+  voice: "(deprecated)",
+  text: `
+    This is the redirecting service to the new sc-voice.net
+  `,
+  github: "sc-voice/TDE",
+},{
   title: "voice.suttacentral.net",
   summary: "Legacy Voice website",
   link: "https://voice.suttacentral.net",

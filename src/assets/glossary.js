@@ -464,13 +464,35 @@ const Glossary = [{
 },{
   title: "legacy.sc-voice.net",
   summary: "Legacy Voice website",
-  link: "https://voice.suttacentral.net",
+  link: "https://legacy.sc-voice.net",
+  github: "sc-voice/legacy_sc-voice_net",
   api: "voice.suttacentral.net",
-  voice: "(deprecated)",
+  voice: "(redirection)",
   text: `
     This is the redirecting service to the new sc-voice.net
   `,
-  github: "sc-voice/TDE",
+  html: `
+    voice.suttacentral.net Links have the form:
+
+    <blockquote>
+    <code style="font-size: smaller; background-color:#9C5B01">
+      /scv/index.html#/sutta?search=SEARCH_TERM&lang=LANGUAGE
+    </code>
+    </blockquote>
+
+    <ol style="margin-left: 3em">
+      <li><a 
+        href="https://sc-voice.net/scv/index.html#/sutta?search=mn44&lang=de"
+        target="_blank">
+        /scv/index.html#/sutta?search=mn44&lang=de
+      </a></li>
+      <li><a 
+        href="https://sc-voice.net/scv/index.html#/sutta?search=mn44&lang=en"
+        target="_blank">
+        /scv/index.html#/sutta?search=mn44&lang=en
+      </a></li>
+    </ol>
+  `,
 },{
   title: "voice.suttacentral.net",
   summary: "Legacy Voice website",

@@ -266,6 +266,17 @@ const Glossary = [{
     The staging Voice API server is used to test
     new software releases before pushing those
     releases to www.api.sc-voice.net
+
+    The staging server will be updated with the
+    following schedule-action. Running the schedule-action on your
+    personal computer is difficult since part of the
+    action requires building a new DockerHub image and
+    upload speeds are usually dismally slow.
+    So test EVERYTHING on your local machine and just wait.
+
+    NOTE: Content releases are blocked until the major version number
+    changes.
+
   `,
 },{
   title: "SuttaCentral Audio Links",
@@ -435,7 +446,7 @@ const Glossary = [{
   github: "sc-voice/admin_sc-voice_net",
   api: "api.sc-voice.net",
   admin: true,
-  monitor: "https://staging.api.sc-voice.net/scv/probes",
+  monitor: "https://api.sc-voice.net/scv/probes",
   text: `
     The System Status panel shows the status of all Voice servers.
     A green checkmark indicates that the given server is 

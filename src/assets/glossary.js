@@ -183,6 +183,31 @@ const Glossary = [{
     </table>
   `,
 },{
+  title: "Github Actions",
+  summary: "Schedule of Github Actions",
+  html:`
+    <table>
+    <caption>Content Schedule</caption>
+    <thead>
+      <tr>
+        <th>Minute</th>
+        <th>Hour</th>
+        <th>Repository<th>
+      </tr>
+    </thead>
+    <tr> <td>30</td><td>1,9,17</td> <td>ebt-data</td> </tr>
+    <tr> <td>00</td><td>2,10,18</td> <td>scv-esm</td> </tr>
+    <tr> <td>20</td><td>2,10,18</td> <td>scv-bilara</td> </tr>
+    <tr> <td>40</td><td>2,10,18</td> <td>api_sc-voice_net</td> </tr>
+    <tr> <td>00</td><td>3,11,19</td> <td>ebt-vue3</td> </tr>
+    <tr> <td>20</td><td>3,11,19</td> <td>ebt-site3</td> </tr>
+    <tr> <td>20</td><td>3,11,19</td> <td>sc-voice_net</td> </tr>
+    <tr> <td>20</td><td>3,11,19</td> <td>dhammaregen3</td> </tr>
+    <tr> <td>20</td><td>3,11,19</td> <td>site-tba</td> </tr>
+
+    </table>
+  `,
+},{
   title: "Site-TBA (EBT-Site/FR)",
   summary: "French EBT-Site hosted by Noé Ismet",
   link: "https://pannabijani.github.io/site-tba",

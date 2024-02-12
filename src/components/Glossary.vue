@@ -169,6 +169,13 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+.glossary-text h1,h2,h3,h4 {
+  padding-top:0.7em;
+  padding-bottom:0.2em;
+}
+.glossary-text ol {
+  margin-left: 2em;
+}
 .glossary-text ul {
   margin-left: 2em;
 }
@@ -186,6 +193,9 @@
 }
 .glossary-text td {
   padding-right: 0.5em;
+}
+.glossary-text p {
+  padding-top: 0.4em;
 }
 .glossary-text th {
   padding-right: 0.5em;

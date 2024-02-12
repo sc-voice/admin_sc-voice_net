@@ -498,16 +498,55 @@ const Glossary = [{
     </table>
   `,
 },{
-  title: "legacy.sc-voice.net",
-  summary: "Legacy Voice website",
-  link: "https://legacy.sc-voice.net",
-  github: "sc-voice/legacy_sc-voice_net",
+  title: "sc-voice-legacy",
+  summary: "URL resolver for legacy voice.suttacentral.net",
+  link: "https://legacy-voice.suttacentral.net",
+  github: "sc-voice-legacy/voice_suttacentral_net",
   api: "voice.suttacentral.net",
   voice: "(redirection)",
   text: `
-    This is the redirecting service to the new sc-voice.net
+    This is the redirecting service from voice.suttacentral.net
+    to the new sc-voice.net. It currently is set up for 
+    "legacy-voice.suttacentral.net"
   `,
   html: `
+    <h3>Redirecting voice.suttacentral.net</h3>
+    Currently, the repo "voice_suttacentral_net" is has
+    custom domain "legacy-voice.suttacentral.net".
+    Eventually we will need to redirect "voice.suttacentral.net"
+    from the legacy AWS EC2 server <code>50.18.90.151</code> 
+    to sc-voice.net. The AWS EC2 server is no longer being
+    being maintained and will eventually die due to natural causes.
+
+    <p>
+    When users no longer need to use the legacy server
+    (i.e., when all functionaliy of Voice has been migrated to
+    sc-voice.net),
+    it will be time to redirect existing links for voice.suttacentral.net.
+    Those existing links will translated into links
+    that can be handled by sc-voice.net. Users who access voice.suttacentral.net
+    will also see sc-voice.net.
+    </p>
+
+    <h4>Instructions for rebinding voice.suttacentral.net:</h4>
+    <ol>
+      <li>Navigate to Github Account Settings for "sc-voice-legacy"</li>
+      <li>Click on Pages</li>
+      <li>Add domain for verification "voice.suttacentral.net"</li>
+      <li>Add SuttaCentral DNS TXT record with challenge key and value provided by Github</li>
+      <li>Update SuttaCentral DNS CNAME record for "voice.suttacentral.net" to point to 
+          <code>sc-voice-legacy.github.io</code> instead of <code>50.18.90.151</code>
+      </li>
+      <li>Verify Github custom domain</li>
+      <li>Navigate to Github Repository settings for "voice_suttacentral_net"</li>
+      <li>Click on Pages</li>
+      <li>Enter <code>voice.suttacentral.net</code> Custom Domain textbox</li>
+      <li>Click Save</li>
+    </ol>
+
+    When DNS stabilizes, voice.suttacentral.net should now redirect to sc-voice.net
+
+    <h3>voice.suttacentral.net links</h3>
     voice.suttacentral.net Links have the form:
 
     <blockquote>

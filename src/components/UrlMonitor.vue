@@ -169,8 +169,11 @@
     return color;
   }
 
+  // Update display three times.
+  // If more is needed, user should refresh page.
   updateProbes();
-  setInterval(async()=>updateProbes(), 5000);
+  setTimeout(async()=>updateProbes(), 5000);
+  setTimeout(async()=>updateProbes(), 10000);
 
 </script>
 <style scoped>

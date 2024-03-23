@@ -569,6 +569,24 @@ const Glossary = [{
     </ol>
   `,
 },{
+  title: "scripts/update-vuetify",
+  summary: "script to update the Vue/Vuetify UI framework",
+  link: "https://voice.suttacentral.net",
+  admin: true,
+  text: `
+    SC-Voice uses Vue3/Vuetify3 user interface frameork,
+    which changes periodically for bug fixes. Generally
+    speaking, it's nice to have those bug fixes, but
+    updating the frameworks can be tricky if Vue3/Vuetify3
+    change in big ways.  Originally part of the daily
+    Github Action automation, this script can now only be
+    run manually. Basically, if the script runs and
+    EBT-Vue3 works, check in the results. If the script
+    does not work, don't check in the results.
+    NOTE: EBT-Site3 has a similar issue
+  `,
+  github: "sc-voice/ebt-vue3",
+},{
   title: "voice.suttacentral.net",
   summary: "Legacy Voice website",
   link: "https://voice.suttacentral.net",

@@ -217,24 +217,6 @@ const Glossary = [{
   `,
   github: "pannabijani/site-tba",
 },{
-  title: "pli.api.sc-voice.net",
-  summary: "Pali (pli) Voice API server",
-  link: "https://pli.api.sc-voice.net/status",
-  github: "sc-voice/api_sc-voice_net",
-  api: "api.sc-voice.net",
-  admin: true,
-  monitor: "https://pli.api.sc-voice.net/scv/probes",
-  text: `
-    (not implemented)
-    Pali (pli) Voice API server will eventually
-    handle all Pali audio. Although any API server
-    can handle Pali, Pali audio requirements will probably
-    exceed those for any other language. 
-    In addition, all translations need Pali anyway, so
-    centralizing Pali audio frees up disk for all other
-    API servers.
-  `,
-},{
   title: "sc-voice.net",
   summary: "SuttaCentral Voice website",
   link: "https://sc-voice.net",
@@ -508,7 +490,7 @@ const Glossary = [{
   text: `
     The default Voice API server handles languages
     with few segmented translations.
-    Languages with extensive translations should  be
+    Languages with extensive translations could be
     allocated their own API server (e.g., pli.api.sc-voice.net)
   `,
 }].map((item,i)=>{ item.value = i; return item});

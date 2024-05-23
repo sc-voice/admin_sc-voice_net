@@ -208,14 +208,14 @@ const Glossary = [{
     </table>
   `,
 },{
-  title: "Site-TBA (EBT-Site/FR)",
+  title: "Paññābījāni (EBT-Site/FR)",
   summary: "French EBT-Site hosted by Noé Ismet",
-  link: "https://pannabijani.github.io/site-tba",
+  link: "https://pannabijani.net",
   voice: "EBT-Site",
   text: `
     French language EBT-Site
   `,
-  github: "pannabijani/site-tba",
+  github: "pannabijani/ebt-site",
 },{
   title: "sc-voice.net",
   summary: "SuttaCentral Voice website",

@@ -10,6 +10,13 @@ const Glossary = [{
     API servers. 
   `,
 },{
+  title: "admin spreadsheet",
+  link: "https://docs.google.com/spreadsheets/d/1fQEqMe8SVPAjzvBL267ll7TNGzChV7CNdFSop0qJ24o",
+  summary: "Administration Spreadsheet",
+  text: `
+    Who pays what how
+  `,
+},{
   title: "api_sc-voice_net",
   summary: "Voice API server source",
   github: "sc-voice/api_sc-voice_net",

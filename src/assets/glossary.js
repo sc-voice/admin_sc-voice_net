@@ -140,6 +140,15 @@ const Glossary = [{
   link: "https://github.com/dhammaregen/dhammaregen3/issues/1",
   admin: true,
 },{
+  title: "fr.sc-voice.net",
+  summary: "SuttaCentral Voice website (FR)",
+  link: "https://fr.sc-voice.net",
+  github: "sc-voice/fr_sc-voice_net",
+  voice: "EBT-Site",
+  text: `
+    French monolingual SC Voice managed by Noé Ismet.
+  `,
+},{
   title: "Linode Server",
   summary: "Voice API server hardware",
   link: "https://github.com/sc-voice/api_sc-voice_net/wiki/Linode-Server-Setup",

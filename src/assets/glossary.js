@@ -224,6 +224,16 @@ const Glossary = [{
     </table>
   `,
 },{
+  title: "pali",
+  summary: "Javascript Pali utilities for SC-Voice",
+  github: "sc-voice/pali",
+  text: `
+    Javascript Library wrapper for DigitalPaliDictionary as
+    used in SC-Voice.
+    Also includes utilities such as Pali word sorting
+    in OCBS Pali order.
+  `,
+},{
   title: "Paññābījāni (EBT-Site/FR)",
   summary: "French EBT-Site hosted by Noé Ismet",
   link: "https://pannabijani.net",

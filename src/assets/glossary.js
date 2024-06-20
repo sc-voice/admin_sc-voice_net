@@ -41,24 +41,6 @@ const Glossary = [{
     large. The ebt-data repository contains only pli/ms content.
   `,
 },{
-  title: "bilara-data-deepl",
-  summary: "SuttaCentral Bilara repository (ebt-deepl fork)",
-  github: "sc-voice/bilara-data-deepl",
-  text: `
-    Fork of bilara-data used to upload ebt-deepl pre-translations.
-  `,
-},{
-  title: "d3_sc-voice_net",
-  summary: "Tipitaka network graphs based on SC-Voice examples",
-  github: "sc-voice/d3_sc-voice_net",
-  link: "https://sc-voice.github.io/d3_sc-voice_net/",
-  text: `
-    (DEPRECATED PROTOTYPE)
-    Collection of D3 Disjoint Force-Directed Graphs 
-    that highlight the links between examples and
-    their corresponding Tipitaka documents.
-  `,
-},{
   title: "Dhammaregen",
   summary: "German EBT-Site hosted by Silashin Sabbamitta",
   link: "https://dhammaregen.net",
@@ -88,15 +70,6 @@ const Glossary = [{
     SC-Voice is based on the Pali texts and translations, so it doesn't
     need the majority of information stored in the SuttaCentral
     bilara-data repository.
-  `,
-},{
-  title: "ebt-deepl",
-  summary: "EBT DeepL translation adaptor",
-  github: "sc-voice/ebt-deepl",
-  library: "npm install ebt-deepl (TBD)",
-  text: `
-    Github repository for adding human-editable DeepL
-    EBT translations. Includes glossary support.
   `,
 },{
   title: "ebt-deepl feature backlog",
@@ -229,19 +202,11 @@ const Glossary = [{
   github: "sc-voice/pali",
   text: `
     Javascript Library wrapper for DigitalPaliDictionary as
-    used in SC-Voice.
-    Also includes utilities such as Pali word sorting
-    in OCBS Pali order.
+    used in SC-Voice. The library is updated regularly by
+    Github Actions from sc-data, reducing the DPD data from 21MB to 6.5MB.
+    The library also provides an API for querying the DPD
+    in an approximation of the full desktop version of DPD.
   `,
-},{
-  title: "Paññābījāni (EBT-Site/FR)",
-  summary: "French EBT-Site hosted by Noé Ismet",
-  link: "https://pannabijani.net",
-  voice: "EBT-Site",
-  text: `
-    French language EBT-Site
-  `,
-  github: "pannabijani/ebt-site",
 },{
   title: "sc-voice.net",
   summary: "SuttaCentral Voice website",
@@ -519,5 +484,41 @@ const Glossary = [{
     Languages with extensive translations could be
     allocated their own API server (e.g., pli.api.sc-voice.net)
   `,
+},{
+  title: "|LEGACY|d3_sc-voice_net",
+  summary: "Tipitaka network graphs based on SC-Voice examples",
+  github: "sc-voice/d3_sc-voice_net",
+  link: "https://sc-voice.github.io/d3_sc-voice_net/",
+  text: `
+    (DEPRECATED PROTOTYPE)
+    Collection of D3 Disjoint Force-Directed Graphs 
+    that highlight the links between examples and
+    their corresponding Tipitaka documents.
+  `,
+},{
+  title: "|LEGACY|bilara-data-deepl",
+  summary: "SuttaCentral Bilara repository (ebt-deepl fork)",
+  github: "sc-voice/bilara-data-deepl",
+  text: `
+    Fork of bilara-data used to upload ebt-deepl pre-translations.
+  `,
+},{
+  title: "|LEGACY|ebt-deepl",
+  summary: "EBT DeepL translation adaptor",
+  github: "sc-voice/ebt-deepl",
+  library: "npm install ebt-deepl (TBD)",
+  text: `
+    Github repository for adding human-editable DeepL
+    EBT translations. Includes glossary support.
+  `,
+},{
+  title: "|LEGACY|Paññābījāni (EBT-Site/FR)",
+  summary: "French EBT-Site hosted by Noé Ismet",
+  link: "https://pannabijani.net",
+  voice: "EBT-Site",
+  text: `
+    French language EBT-Site
+  `,
+  github: "pannabijani/ebt-site",
 }].map((item,i)=>{ item.value = i; return item});
 export default Glossary;

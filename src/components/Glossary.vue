@@ -46,6 +46,9 @@
         <div v-if="curItem.issue" class="issue">
           <div v-html="curItem.issue_body.value"/>
         </div>
+        <div v-if="curItem.email" >
+          <a :href="`mailto:${curItem.email}`">email: {{curItem.email}}</a>
+        </div>
       </v-card-text>
     </v-card>
   </v-row>

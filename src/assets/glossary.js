@@ -18,6 +18,7 @@ const Glossary = [{
   `,
 },{
   title: "api_sc-voice_net",
+  link: "https://docs.google.com/document/d/1VTvKOAA3cH86MdDjV7cWi77XRVxzk5ht",
   summary: "Voice API server source",
   github: "sc-voice/api_sc-voice_net",
   api: "api.sc-voice.net",
@@ -72,12 +73,6 @@ const Glossary = [{
     bilara-data repository.
   `,
 },{
-  title: "ebt-deepl feature backlog",
-  summary: "Things we plan to do for ebt-deepl",
-  issue: { owner:"sc-voice", repo:"ebt-deepl", issue_number:1 },
-  link: "https://github.com/sc-voice/ebt-deepl/issues/1",
-  admin: true,
-},{
   title: "EBT-Site",
   summary: "Github Web Application based on the EBT-Site framework",
   voice: "EBT-Site",
@@ -112,6 +107,18 @@ const Glossary = [{
   issue: { owner:"dhammaregen", repo:"dhammaregen3", issue_number:1 },
   link: "https://github.com/dhammaregen/dhammaregen3/issues/1",
   admin: true,
+},{
+  title: "Friends of Voice",
+  summary: "Articles of Association (CH)",
+  email: "sc.voice.friends@gmail.com",
+  link: "https://docs.google.com/document/d/1VTvKOAA3cH86MdDjV7cWi77XRVxzk5ht",
+  admin: "true",
+  text: `
+    Association for administering SC-Voice:
+    Treasurer: Noé Ismet,
+    President: Karl Lew, 
+    Secretary: Sabbamitta Silashin,
+  `,
 },{
   title: "fr.sc-voice.net",
   summary: "SuttaCentral Voice website (FR)",
@@ -511,6 +518,12 @@ const Glossary = [{
     Github repository for adding human-editable DeepL
     EBT translations. Includes glossary support.
   `,
+},{
+  title: "|LEGACY|ebt-deepl feature backlog",
+  summary: "Things we plan to do for ebt-deepl",
+  issue: { owner:"sc-voice", repo:"ebt-deepl", issue_number:1 },
+  link: "https://github.com/sc-voice/ebt-deepl/issues/1",
+  admin: true,
 },{
   title: "|LEGACY|Paññābījāni (EBT-Site/FR)",
   summary: "French EBT-Site hosted by Noé Ismet",

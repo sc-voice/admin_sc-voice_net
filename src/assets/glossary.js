@@ -114,7 +114,7 @@ const Glossary = [{
   link: "https://docs.google.com/document/d/1VTvKOAA3cH86MdDjV7cWi77XRVxzk5ht",
   admin: "true",
   text: `
-    Association for administering SC-Voice:
+    Association for administering SC-Voice and related sites:
     Treasurer: Noé Ismet,
     President: Karl Lew, 
     Secretary: Sabbamitta Silashin,

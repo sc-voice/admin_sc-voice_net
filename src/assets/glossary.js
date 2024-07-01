@@ -108,10 +108,10 @@ const Glossary = [{
   link: "https://github.com/dhammaregen/dhammaregen3/issues/1",
   admin: true,
 },{
-  title: "Friends of Voice",
+  title: "Friends of Voice (Articles)",
   summary: "Articles of Association (CH)",
   email: "sc.voice.friends@gmail.com",
-  link: "https://docs.google.com/document/d/1VTvKOAA3cH86MdDjV7cWi77XRVxzk5ht",
+  link: "https://docs.google.com/document/d/137POJx_D7I26D0tx_uIUZn21gtdm2YYk",
   admin: "true",
   text: `
     Association for administering SC-Voice and related sites:  

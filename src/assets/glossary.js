@@ -533,5 +533,14 @@ const Glossary = [{
     French language EBT-Site
   `,
   github: "pannabijani/ebt-site",
+},{
+  title: "|LEGACY|Dhammaregen (EBT-Site/DE)",
+  summary: "German EBT-Site hosted by Sabbamitta",
+  link: "https://dhammaregen.github.io/dhammaregen",
+  voice: "EBT-Site",
+  text: `
+    German language EBT-Site
+  `,
+  github: "dhammaregen/dhammaregen",
 }].map((item,i)=>{ item.value = i; return item});
 export default Glossary;

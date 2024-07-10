@@ -18,7 +18,7 @@ const Glossary = [{
   `,
 },{
   title: "api_sc-voice_net",
-  link: "https://api.sc-voice.net/status",
+  link: "https://www.api.sc-voice.net/status",
   summary: "Voice API server source",
   github: "sc-voice/api_sc-voice_net",
   api: "api.sc-voice.net",

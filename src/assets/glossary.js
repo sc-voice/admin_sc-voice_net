@@ -129,6 +129,16 @@ const Glossary = [{
     French monolingual SC Voice managed by Noé Ismet.
   `,
 },{
+  title: "Infomaniak",
+  summary: "Domain provider",
+  link: "https://infomaniak.com",
+  admin: true,
+  email: "sc.voice.friends@gmail.com",
+  text: `
+    EU domain provider for: sc.voice.net, dhammaregen.net.
+    Account managed by sc.voice.friends@gmail.com
+  `,
+},{
   title: "Linode Server",
   summary: "Voice API server hardware",
   link: "https://github.com/sc-voice/api_sc-voice_net/wiki/Linode-Server-Setup",

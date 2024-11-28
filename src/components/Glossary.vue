@@ -16,7 +16,7 @@
         </v-list>
       </v-card-text>
     </v-card>
-    <v-card max-width="40em">
+    <v-card max-width="35em">
       <v-card-text>
         <div class="glossary-title"> 
           {{curItem.title}}
@@ -34,7 +34,7 @@
             </div>
           </a>
         </div>
-        <div class="glossary-text"> {{curItem.text}}</div>
+        <div class="glossary-text" >{{curItem.text}}</div>
         <div class="glossary-text" v-html="curItem.html" />
         <div v-if="curItem.library" class="library">
           <div>{{curItem.library}}</div>

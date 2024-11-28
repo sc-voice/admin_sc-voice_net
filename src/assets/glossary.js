@@ -214,16 +214,6 @@ const Glossary = [{
     </table>
   `,
 },{
-  title: "ms-dpd",
-  summary: "Javascript library for DigitalPaliDictionary",
-  github: "sc-voice/pali",
-  link: "https://digitalpalidictionary.github.io",
-  text: `
-    Javascript multilingual library for DigitalPaliDictionary (DPD)
-    Mahāsańghīti content used in SC-Voice. The library is updated 
-    regularly following DPD updates.
-  `,
-},{
   title: "sc-voice.net",
   summary: "SuttaCentral Voice website",
   link: "https://sc-voice.net",
@@ -255,6 +245,20 @@ const Glossary = [{
     The scv-esm repository is a Javascript web/desktop library
     for working with information stored in bilara-data
     format.
+  `,
+},{
+  title: "@sc-voice/ms-dpd",
+  summary: "Javascript library for DigitalPaliDictionary",
+  github: "sc-voice/ms-dpd",
+  html: `
+    Javascript multilingual library for 
+    a condensed version of the 
+    <a href="https://digitalpalidictionary.github.io"
+    >DigitalPaliDictionary (DPD)</a>
+    The MS-DPD content is limited to the Mahāsańghīti content 
+    used in SC-Voice. The library is updated 
+    regularly following DPD updates.
+
   `,
 },{
   title: "@sc-voice/state-log",

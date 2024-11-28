@@ -214,15 +214,14 @@ const Glossary = [{
     </table>
   `,
 },{
-  title: "pali",
-  summary: "Javascript Pali utilities for SC-Voice",
+  title: "ms-dpd",
+  summary: "Javascript library for DigitalPaliDictionary",
   github: "sc-voice/pali",
+  link: "https://digitalpalidictionary.github.io",
   text: `
-    Javascript Library wrapper for DigitalPaliDictionary as
-    used in SC-Voice. The library is updated regularly by
-    Github Actions from sc-data, reducing the DPD data from 21MB to 6.5MB.
-    The library also provides an API for querying the DPD
-    in an approximation of the full desktop version of DPD.
+    Javascript multilingual library for DigitalPaliDictionary (DPD)
+    Mahāsańghīti content used in SC-Voice. The library is updated 
+    regularly following DPD updates.
   `,
 },{
   title: "sc-voice.net",

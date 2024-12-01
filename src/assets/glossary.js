@@ -491,7 +491,7 @@ const Glossary = [{
     </table>
   `,
 },{
-  title: "TODO: Pali Text-To-Speech (TTS)",
+  title: "TODO: Pali Text-To-Speech",
   summary: "Open source Pali Text-To-Speech (TTS)",
   admin: true,
   html: `

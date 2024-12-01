@@ -491,6 +491,79 @@ const Glossary = [{
     </table>
   `,
 },{
+  title: "TODO: Pali Text-To-Speech (TTS)",
+  summary: "Open source Pali Text-To-Speech (TTS)",
+  admin: true,
+  html: `
+    <h4>PROBLEM: SC-Voice TTS relies on Amazon Web Services</h4>
+    Explore open-source, local AI alternatives to AWS Polly 
+    for Pali TTS that can be trained on human voices to 
+    reproduce arbitrary Pali with standard IPA.
+    The TTS voices should be neutral in affect, having smooth and
+    natural breathing cadence along with steady, gentle, 
+    and mindful intonation.
+
+    <h4>SOLUTIONS:</h4>
+    <ul>
+      <li>
+        Ven. Bodhirasa suggests:
+        <a href="https://github.com/pathnirvana/tipitaka.lk/tree/master/dev%2Faudio">
+          Ven. Mettānanda audio
+        </a>
+        This audio is ideal for listening, however the text spoken
+        will not match the Mahāsańghīti corpus exactly, which 
+        will result in problems with text/audio alignment
+      </li>
+      <li>
+        Ven. Bodhirasa suggests:
+        <a href="https://pnfo.github.io/pali-tts-dataset/">
+          TTS trained on Ven. Mettānanda audio
+        </a>
+        This TTS engine proves that it is possible to train an AI voice
+        for Pali. The audio is quite intelligible, but is 
+        unfortunately painful to hear for extended listening 
+        (e.g., DN33). There is a certain
+        "roughness" that might be caused by a voice model that
+        produces unsettling abrupt audio transitions.
+        The human ear is quite sensitive to discontinuities in 
+        higher derivatives, since those discontinuiies were often
+        correlated to life-changing environmental stimuli requiring
+        immediate attention. 
+
+        Because of this, the resulting listening experience 
+        tends to the non-immersive, since it is triggering 
+        ancient perceptions of environmental changes requiring
+        immediate attention.
+        Immersive cadence and intonation are grounded in 
+        steady breath/heart cycles honed by years of meditation.
+        Since the training data set does indeed have those 
+        very immersive qualities, we may have to wait a bit
+        until open-source TTS engines have quality similar to
+        commercially available TTS engines.
+      </li>
+    </ul>
+    <h4>REFERENCES:</h4>
+    <ol>
+      <li>
+        <a href="https://www.youtube.com/shorts/P_vKzbpp8ss">
+          Stepper motor using quintic movement (Karl Lew)
+        </a>
+        <p>
+        Video of stepper motors moving according to quintic equation
+        generates very smooth accelerations. 
+        The sound heard is from a digital stepper motor, which
+        moves in fixed increments (i.e., click-click-click). 
+        The sequence of incremental "clicks" is so rapid that it
+        is perceived as a single sound that varies 
+        smoothly over the range of motion.
+        The timing of each individual motor step is calculated
+        using quintic equations, which have C4 continuity
+        with smooth fourth order derivatives.
+        The general reaction to this is a surprised, 
+        "that doesn't sound like a jerky robot."
+    </ol>
+  `,
+},{
   title: "www.api.sc-voice.net",
   summary: "Default Voice API server",
   link: "https://www.api.sc-voice.net/status",

@@ -55,7 +55,7 @@
 </template>
 
 <script setup>
-  import { Octokit } from "https://esm.sh/octokit";
+  import { Octokit } from "https://esm.sh/@octokit/core@4.2.2";
   import { watch, computed, ref } from "vue";
   import { useRoute } from "vue-router";
   import { useAppStore } from '../store/app.js'

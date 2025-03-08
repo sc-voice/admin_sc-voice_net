@@ -214,6 +214,15 @@ const Glossary = [{
     </table>
   `,
 },{
+  title: "ru.sc-voice.net",
+  summary: "SuttaCentral Voice website (RU)",
+  link: "https://ru.sc-voice.net",
+  github: "sc-voice/ru_sc-voice_net",
+  voice: "EBT-Site",
+  text: `
+    Russian monolingual SC Voice managed by ???.
+  `,
+},{
   title: "sc-voice.net",
   summary: "SuttaCentral Voice website",
   link: "https://sc-voice.net",

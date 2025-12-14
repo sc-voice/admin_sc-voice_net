@@ -22,11 +22,11 @@
     "log-instance": "^1.6.0",
     "markdown-it": "^13.0.2",
     "markdown-it-emoji": "^2.0.2",
-    "merkle-json": "^2.10.0",
+    "merkle-json": "^2.11.0",
     "octokit": "^3.1.1",
     "pinia": "^2.0.0",
     "roboto-fontface": "*",
-    "scv-esm": "^1.115.898",
+    "scv-esm": "^1.116.0",
     "vue": "^3.2.0",
     "vue-router": "^4.0.0",
     "vuetify": "^3.0.0"

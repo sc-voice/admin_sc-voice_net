@@ -22,7 +22,7 @@
     "log-instance": "^1.8.0",
     "markdown-it": "^13.0.2",
     "markdown-it-emoji": "^2.0.2",
-    "merkle-json": "^2.12.0",
+    "merkle-json": "^2.13.0",
     "octokit": "^3.1.1",
     "pinia": "^2.0.0",
     "roboto-fontface": "*",

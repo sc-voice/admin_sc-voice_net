@@ -236,6 +236,17 @@ const Glossary = [{
     for a "click to hear" experience.
   `,
 },{
+  title: "scv-app",
+  github: "sc-voice/scv-app",
+  summary: "SCVoice mobile application source (iOS, MacOS)",
+  text: `
+    Primary repository for scVoice mobile applications.
+    SCVoice mobile applications are primarily designed for offline usage,
+    although they may include internet resources as needed.
+    Currently includes Apple application and may include Android mobile 
+    and/or Flutter applications as well.
+  `,
+},{
   title: "scv-bilara",
   github: "sc-voice/scv-bilara",
   summary: "Linux command-line search utility for EBT texts",
@@ -268,17 +279,6 @@ const Glossary = [{
     used in SC-Voice. The library is updated 
     regularly following DPD updates.
 
-  `,
-},{
-  title: "scv-app",
-  github: "sc-voice/scv-app",
-  summary: "SCVoice mobile application source (iOS, MacOS)",
-  text: `
-    Primary repository for scVoice mobile applications.
-    SCVoice mobile applications are primarily designed for offline usage,
-    although they may include internet resources as needed.
-    Currently includes Apple application and may include Android mobile 
-    and/or Flutter applications as well.
   `,
 },{
   title: "@sc-voice/state-log",

@@ -270,6 +270,17 @@ const Glossary = [{
 
   `,
 },{
+  title: "scv-app",
+  github: "sc-voice/scv-app",
+  summary: "SCVoice mobile application source (iOS, MacOS)",
+  text: `
+    Primary repository for scVoice mobile applications.
+    SCVoice mobile applications are primarily designed for offline usage,
+    although they may include internet resources as needed.
+    Currently includes Apple application and may include Android mobile 
+    and/or Flutter applications as well.
+  `,
+},{
   title: "@sc-voice/state-log",
   github: "sc-voice/state-log",
   link: "https://sc-voice.github.io/state-log",
